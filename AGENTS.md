@@ -2,34 +2,34 @@
 
 ## Cursor Cloud specific instructions
 
-### Project overview
+### Обзор проекта
 
-This is a **WordPress website** (`kvadratyra.ru`) — a construction/roofing services site for the Voronezh region. There is no local WordPress/MySQL/Apache stack; the site is deployed to remote Beget hosting via FTP.
+**WordPress-сайт** `kvadratyra.ru` — строительные/кровельные услуги, Воронежская область. Локального стека WordPress/MySQL/Apache нет; сайт размещён на хостинге Beget, деплой по FTP.
 
-Locally buildable/testable components:
+Компоненты, которые можно собирать и тестировать локально:
 
-| Component | Directory | Key commands |
+| Компонент | Директория | Основные команды |
 |---|---|---|
-| Theme frontend (Vite) | `wp-content/themes/kvadratyra-theme/` | `npm run dev`, `npm run build` |
-| Deploy toolkit + audit | `deploy/` | `npm test` (8 unit tests), `npm run audit:server` (needs FTP creds) |
-| WP autopost bot | `automation/wp_autopost/` | Python + Playwright (needs WP credentials) |
+| Фронтенд темы (Vite) | `wp-content/themes/kvadratyra-theme/` | `npm run dev`, `npm run build` |
+| Тулкит деплоя + аудит | `deploy/` | `npm test` (8 юнит-тестов), `npm run audit:server` (нужны FTP-креды) |
+| Бот автопостинга WP | `automation/wp_autopost/` | Python + Playwright (нужны WP-креды) |
 
-### Running services
+### Запуск сервисов
 
-- **Vite dev server**: `cd wp-content/themes/kvadratyra-theme && npm run dev` — starts on `http://localhost:5173/`. This is the main dev-loop command for theme JS/CSS work.
-- **Vite build**: `npm run build` in the same directory — produces `assets/dist/main.js` and `assets/dist/style.css`.
-- **Deploy tests**: `cd deploy && npm test` — runs 8 Node.js built-in test runner tests (`node --test audit/*.test.mjs`). No external services needed.
+- **Vite dev server**: `cd wp-content/themes/kvadratyra-theme && npm run dev` — запускается на `http://localhost:5173/`. Основная команда для разработки JS/CSS темы.
+- **Сборка Vite**: `npm run build` в той же директории — выходные файлы `assets/dist/main.js` и `assets/dist/style.css`.
+- **Тесты деплой-тулкита**: `cd deploy && npm test` — 8 тестов через встроенный test runner Node.js (`node --test audit/*.test.mjs`). Внешние сервисы не нужны.
 
-### Lint
+### Линтинг
 
-No ESLint/Prettier/Stylelint/PHPCS is configured in this repo. The only automated quality check is `npm test` in `deploy/`.
+ESLint/Prettier/Stylelint/PHPCS в репозитории не настроены. Единственная автоматическая проверка качества — `npm test` в `deploy/`.
 
-### Deployment
+### Деплой
 
-See `DEPLOY.md` for manual FTP deploy instructions and `deploy/README.md` for the automated audit toolkit. FTP credentials are required for deploy and server audit (configured in `deploy/.env`).
+См. `DEPLOY.md` для ручного FTP-деплоя и `deploy/README.md` для автоматического аудит-тулкита. FTP-креды настраиваются в `deploy/.env`.
 
-### Gotchas
+### Важные нюансы
 
-- The Vite config sets `root` to the theme directory and outputs to `assets/dist/`. The `base: './'` setting is important for WordPress asset paths.
-- Python Playwright scripts in `automation/wp_autopost/` require `playwright install chromium` after `pip install`.
-- The deploy toolkit's `npm run audit:server` requires FTP credentials; to run HTTP-only checks, set `AUDIT_SKIP_FTP=1`.
+- Vite-конфиг задаёт `root` как директорию темы, выходная папка — `assets/dist/`. Настройка `base: './'` критична для путей к ассетам в WordPress.
+- Python-скрипты Playwright в `automation/wp_autopost/` требуют `playwright install chromium` после `pip install`.
+- Команда `npm run audit:server` в деплой-тулките требует FTP-креды; для HTTP-режима без FTP используйте `AUDIT_SKIP_FTP=1`.
