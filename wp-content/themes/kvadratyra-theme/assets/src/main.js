@@ -1290,6 +1290,275 @@ function initDirectTelegram() {
   });
 }
 
+/* ═══════════════════════════════════════════════════
+   READING PROGRESS BAR
+   ═══════════════════════════════════════════════════ */
+
+function initReadingProgress() {
+  const bar = document.querySelector('.reading-progress');
+  if (!bar) return;
+
+  const article = document.querySelector('.entry-content') || document.querySelector('.article-layout__main') || document.querySelector('#site-main');
+  if (!article) return;
+
+  function updateProgress() {
+    const rect = article.getBoundingClientRect();
+    const total = rect.height - window.innerHeight;
+    if (total <= 0) { bar.style.width = '100%'; return; }
+    const scrolled = -rect.top;
+    const pct = Math.max(0, Math.min(100, (scrolled / total) * 100));
+    bar.style.width = `${pct}%`;
+    bar.classList.toggle('has-progress', pct > 0);
+  }
+
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+}
+
+/* ═══════════════════════════════════════════════════
+   HERO PARALLAX EFFECT
+   ═══════════════════════════════════════════════════ */
+
+function initHeroParallax() {
+  const hero = document.querySelector('.hero');
+  const visual = document.querySelector('.hero__visual');
+  if (!hero || !visual) return;
+
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+
+  let ticking = false;
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const scrolled = window.scrollY;
+      const heroH = hero.offsetHeight;
+      if (scrolled < heroH * 1.5) {
+        const yOffset = scrolled * 0.15;
+        const scale = 1 - (scrolled * 0.0002);
+        visual.style.transform = `translateY(${yOffset}px) scale(${Math.max(0.95, scale)})`;
+      }
+      ticking = false;
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+/* ═══════════════════════════════════════════════════
+   CARD 3D TILT EFFECT
+   ═══════════════════════════════════════════════════ */
+
+function initCardTilt() {
+  const cards = document.querySelectorAll('.card--tilt, .service-card');
+  if (!cards.length) return;
+
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+
+  cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
+      const rotateX = (0.5 - y) * 8;
+      const rotateY = (x - 0.5) * 8;
+      card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+}
+
+/* ═══════════════════════════════════════════════════
+   CURSOR GLOW EFFECT
+   ═══════════════════════════════════════════════════ */
+
+function initCursorGlow() {
+  if (window.matchMedia('(hover: none)').matches) return;
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+
+  const glow = document.createElement('div');
+  glow.classList.add('cursor-glow');
+  document.body.appendChild(glow);
+
+  let rAF = null;
+  let mx = -500;
+  let my = -500;
+
+  document.addEventListener('mousemove', (e) => {
+    mx = e.clientX;
+    my = e.clientY;
+    if (rAF) return;
+    rAF = requestAnimationFrame(() => {
+      glow.style.left = `${mx}px`;
+      glow.style.top = `${my}px`;
+      rAF = null;
+    });
+  });
+
+  document.addEventListener('mouseleave', () => {
+    glow.style.opacity = '0';
+  });
+
+  document.addEventListener('mouseenter', () => {
+    glow.style.opacity = '';
+  });
+}
+
+/* ═══════════════════════════════════════════════════
+   GAMIFICATION — SCROLL DEPTH BADGES
+   ═══════════════════════════════════════════════════ */
+
+function initScrollGamification() {
+  const badge = document.querySelector('.scroll-badge');
+  if (!badge) return;
+
+  const icon = badge.querySelector('.scroll-badge__icon');
+  const text = badge.querySelector('.scroll-badge__text');
+  if (!icon || !text) return;
+
+  const milestones = [
+    { pct: 25, emoji: '\uD83D\uDD25', msg: '\u041D\u0430\u0447\u0430\u043B\u043E \u043F\u043E\u043B\u043E\u0436\u0435\u043D\u043E!', cls: 'scroll-badge--25' },
+    { pct: 50, emoji: '\u2B50', msg: '\u041F\u043E\u043B\u043E\u0432\u0438\u043D\u0430 \u043F\u0440\u043E\u0439\u0434\u0435\u043D\u0430!', cls: 'scroll-badge--50' },
+    { pct: 75, emoji: '\uD83D\uDE80', msg: '\u041F\u043E\u0447\u0442\u0438 \u0442\u0430\u043C!', cls: 'scroll-badge--75' },
+    { pct: 100, emoji: '\uD83C\uDFC6', msg: '\u0412\u0441\u0451 \u0438\u0437\u0443\u0447\u0438\u043B\u0438!', cls: 'scroll-badge--100' },
+  ];
+
+  let lastMilestone = -1;
+  let hideTimer = null;
+
+  function getScrollPercent() {
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    return h > 0 ? Math.round((window.scrollY / h) * 100) : 0;
+  }
+
+  function showBadge(m) {
+    icon.textContent = m.emoji;
+    text.textContent = m.msg;
+    badge.className = 'scroll-badge is-visible ' + m.cls;
+
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(() => {
+      badge.classList.remove('is-visible');
+    }, 3000);
+  }
+
+  function onScroll() {
+    const pct = getScrollPercent();
+    for (let i = milestones.length - 1; i >= 0; i--) {
+      if (pct >= milestones[i].pct && i > lastMilestone) {
+        lastMilestone = i;
+        showBadge(milestones[i]);
+        kvMetrikaGoal('scroll_depth', { depth: milestones[i].pct });
+        break;
+      }
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+/* ═══════════════════════════════════════════════════
+   ENGAGEMENT — TIME ON PAGE
+   ═══════════════════════════════════════════════════ */
+
+function initTimeOnPage() {
+  const badge = document.querySelector('.time-badge');
+  if (!badge) return;
+
+  const textEl = badge.querySelector('.time-badge__text');
+  if (!textEl) return;
+
+  let seconds = 0;
+  let shown = false;
+
+  const interval = setInterval(() => {
+    if (document.hidden) return;
+    seconds++;
+
+    if (seconds >= 30 && !shown) {
+      badge.classList.add('is-visible');
+      shown = true;
+    }
+
+    if (shown) {
+      const m = Math.floor(seconds / 60);
+      const s = seconds % 60;
+      textEl.textContent = m > 0 ? `${m} \u043C\u0438\u043D ${s} \u0441\u0435\u043A` : `${s} \u0441\u0435\u043A \u043D\u0430 \u0441\u0430\u0439\u0442\u0435`;
+    }
+  }, 1000);
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && seconds > 60) {
+      kvMetrikaGoal('engaged_time', { seconds });
+    }
+  });
+}
+
+/* ═══════════════════════════════════════════════════
+   IMPROVED REVEAL ANIMATIONS WITH VARIANTS
+   ═══════════════════════════════════════════════════ */
+
+function initRevealVariants() {
+  const nodes = Array.from(document.querySelectorAll('.animate-in--scale, .animate-in--left, .animate-in--right'));
+  if (!nodes.length) return;
+
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) {
+    nodes.forEach((el) => el.classList.add('is-in'));
+    return;
+  }
+
+  const io = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('is-in');
+        obs.unobserve(e.target);
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -10% 0px' }
+  );
+  nodes.forEach((el) => io.observe(el));
+}
+
+/* ═══════════════════════════════════════════════════
+   SMOOTH HEADER HIDE ON SCROLL DOWN
+   ═══════════════════════════════════════════════════ */
+
+function initSmartHeader() {
+  const header = document.getElementById('site-header');
+  if (!header) return;
+
+  let lastY = 0;
+  let ticking = false;
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      if (y > 300 && y > lastY + 10) {
+        header.style.transform = 'translateY(-100%)';
+        header.style.transition = 'transform 0.4s cubic-bezier(0.23, 1, 0.32, 1)';
+      } else if (y < lastY - 5 || y < 100) {
+        header.style.transform = '';
+        header.style.transition = 'transform 0.3s cubic-bezier(0.23, 1, 0.32, 1)';
+      }
+      lastY = y;
+      ticking = false;
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
 onReady(() => {
   initHeaderBurger();
   initScrollTop();
@@ -1301,8 +1570,16 @@ onReady(() => {
   initPartnerPointsBooking();
   initTocActive();
   initRevealAnimations();
+  initRevealVariants();
   initLazyload();
   initMagneticButtons();
   initDirectTelegram();
+  initReadingProgress();
+  initHeroParallax();
+  initCardTilt();
+  initCursorGlow();
+  initScrollGamification();
+  initTimeOnPage();
+  initSmartHeader();
 });
 

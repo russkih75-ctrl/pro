@@ -86,32 +86,32 @@ get_header();
         <p class="section__subtitle animate-in text-center" style="margin-left:auto;margin-right:auto;">Не посредники. Своя логистика, склады и производство.</p>
 
         <div class="grid grid--3">
-            <div class="card animate-in">
+            <div class="card card--glow animate-in">
                 <div class="card__icon"><svg class="stroke-draw" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16H3"></path><path d="M7 16V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v12"></path><circle cx="6" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle><path d="M12 2v14"></path><path d="M15 6h4a2 2 0 0 1 2 2v8"></path></svg></div>
                 <h3 class="card__title">Своя ж/д ветка</h3>
                 <div class="card__text">Прямые поставки вагонами с заводов Grand Line и Металл Профиль. Минимальная закупочная цена = лучшая цена для вас.</div>
             </div>
-            <div class="card animate-in">
+            <div class="card card--glow animate-in">
                 <div class="card__icon"><svg class="stroke-draw" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg></div>
                 <h3 class="card__title">Мощный автопарк</h3>
                 <div class="card__text">20 машин Hyundai (6 метров) и 5 фур (20 метров). Доставим любой объем точно в срок, не ожидая наемный транспорт.</div>
             </div>
-            <div class="card animate-in">
+            <div class="card card--glow animate-in">
                 <div class="card__icon"><svg class="stroke-draw" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4H2v16z"></path><path d="M17 18h1"></path><path d="M13 18h1"></path><path d="M9 18h1"></path></svg></div>
                 <h3 class="card__title">Свое производство</h3>
                 <div class="card__text">Линии проката профлиста и металлочерепицы. Режем металл в размер вашего дома — никаких переплат за обрезки.</div>
             </div>
-            <div class="card animate-in">
+            <div class="card card--glow animate-in">
                 <div class="card__icon"><svg class="stroke-draw" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg></div>
                 <h3 class="card__title">4 региона присутствия</h3>
                 <div class="card__text">Офисы и склады в Воронежской, Тамбовской, Саратовской и Волгоградской областях. Мы всегда рядом.</div>
             </div>
-            <div class="card animate-in">
+            <div class="card card--glow animate-in">
                 <div class="card__icon"><svg class="stroke-draw" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg></div>
                 <h3 class="card__title">Экономия 20%</h3>
                 <div class="card__text">Делаем раскрой в инженерной программе. Вы платите только за полезную площадь, а не за "воздух" и обрезки.</div>
             </div>
-            <div class="card animate-in">
+            <div class="card card--glow animate-in">
                 <div class="card__icon"><svg class="stroke-draw" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
                 <h3 class="card__title">Оплата по факту</h3>
                 <div class="card__text">Сначала привозим материал или выполняем работу — потом вы платите. Никаких рисков.</div>
@@ -124,7 +124,7 @@ get_header();
 <section class="section" id="expert">
     <div class="container">
         <div class="grid grid--2 expert-layout">
-            <div class="expert-visual">
+            <div class="expert-visual animate-in--left">
                 <?php
                 $expert_photo = 'https://kvadratyra.ru/wp-content/uploads/2026/02/image_1771694471461_j1v9ep.jpg';
                 ?>
@@ -138,8 +138,8 @@ get_header();
                     style="border-radius:var(--radius);aspect-ratio:1/1;object-fit:cover;"
                 >
             </div>
-            <div class="expert-content">
-                <h2 class="section__title animate-in">Почему я не верю онлайн-калькуляторам</h2>
+            <div class="expert-content animate-in--right">
+                <h2 class="section__title">Почему я не верю онлайн-калькуляторам</h2>
                 <p class="section__subtitle expert-content__subtitle">(и вам не советую)</p>
 
                 <div class="expert-content__body">

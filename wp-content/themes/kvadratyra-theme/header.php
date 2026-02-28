@@ -88,4 +88,18 @@
     </div>
 </header>
 
+<div class="reading-progress" aria-hidden="true"></div>
+
+<!-- Scroll depth gamification badge -->
+<div class="scroll-badge" aria-hidden="true">
+    <span class="scroll-badge__icon"></span>
+    <span class="scroll-badge__text"></span>
+</div>
+
+<!-- Time on page engagement -->
+<div class="time-badge" aria-hidden="true">
+    <span class="time-badge__dot"></span>
+    <span class="time-badge__text"></span>
+</div>
+
 <main id="site-main">
