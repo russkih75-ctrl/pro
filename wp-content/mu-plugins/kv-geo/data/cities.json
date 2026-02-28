@@ -1,0 +1,1602 @@
+[
+  {
+    "slug": "borisoglebsk",
+    "name": "Борисоглебск",
+    "region": "voronezhskaya-oblast",
+    "population": 60000,
+    "lat": 51.3674,
+    "lng": 42.0826,
+    "distance_km": 0,
+    "delivery_terms": "Доставка до двери по городу и Борисоглебскому району бесплатно от 50 000 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 2,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке работ. Рассрочка до 6 мес. без переплат",
+    "offices": [],
+    "unique_facts": [
+      "Базовый склад материалов — отгрузка в день заказа",
+      "Собственная бригада из 12 мастеров-кровельщиков",
+      "Более 200 выполненных объектов в Борисоглебске и районе",
+      "Замерщик с образцами материалов выезжает бесплатно за 2 часа",
+      "Гарантия на монтаж — 10 лет, на материалы — до 50 лет (по сертификату производителя)",
+      "Прямые поставки Grand Line, Металл Профиль, Технониколь — цены без посредников"
+    ],
+    "photos": ["/wp-content/uploads/geo/borisoglebsk-1.jpg", "/wp-content/uploads/geo/borisoglebsk-2.jpg", "/wp-content/uploads/geo/borisoglebsk-3.jpg"],
+    "services": {
+      "krovlya": {"price_from": 450, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 600, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели", "штукатурка"]},
+      "zabory": {"price_from": 1200, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "anna",
+    "name": "Анна",
+    "region": "voronezhskaya-oblast",
+    "population": 18000,
+    "lat": 51.4800,
+    "lng": 40.4300,
+    "distance_km": 120,
+    "delivery_terms": "Доставка до объекта — от 2 000 ₽ в зависимости от объёма",
+    "delivery_days_min": 1,
+    "delivery_days_max": 3,
+    "payment_terms": "Предоплата 30%, остаток при приёмке. Рассрочка по договорённости",
+    "offices": [],
+    "unique_facts": [
+      "Регулярные выезды бригады в Аннинский район — 2-3 раза в неделю",
+      "Более 30 выполненных объектов в Анне и окрестностях",
+      "Экспресс-расчёт стоимости по фото за 30 минут (WhatsApp/Telegram)",
+      "Материалы в размер — минимум отходов, экономия до 15%",
+      "Замерщик с каталогом цветов и образцами приедет за 24 часа"
+    ],
+    "photos": ["/wp-content/uploads/geo/anna-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 500, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 650, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "bobrov",
+    "name": "Бобров",
+    "region": "voronezhskaya-oblast",
+    "population": 19000,
+    "lat": 51.0970,
+    "lng": 40.0180,
+    "distance_km": 160,
+    "delivery_terms": "Доставка до объекта — от 2 500 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Работаем в Бобровском районе с 2019 года",
+      "Выполнено 25+ объектов — кровля, фасады, заборы",
+      "Экспресс-расчёт по фото за 30 минут",
+      "Материалы нарезаем в размер — минимум отходов",
+      "Доставка длинномеров до 12 метров манипулятором"
+    ],
+    "photos": ["/wp-content/uploads/geo/bobrov-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 500, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 650, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "штукатурка"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "buturlinovka",
+    "name": "Бутурлиновка",
+    "region": "voronezhskaya-oblast",
+    "population": 25000,
+    "lat": 50.8330,
+    "lng": 40.5830,
+    "distance_km": 100,
+    "delivery_terms": "Доставка до объекта — от 2 000 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 3,
+    "payment_terms": "Предоплата 30%, остаток при приёмке. Рассрочка до 4 мес.",
+    "offices": [],
+    "unique_facts": [
+      "Близость к складу — доставка за 1-2 дня",
+      "Более 40 объектов в Бутурлиновке и районе",
+      "Замерщик с образцами выезжает на объект бесплатно",
+      "Фиксированная цена в договоре — без скрытых доплат",
+      "Помощь с выбором цвета по RAL-каталогу на месте"
+    ],
+    "photos": ["/wp-content/uploads/geo/buturlinovka-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 480, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 620, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "kalach",
+    "name": "Калач",
+    "region": "voronezhskaya-oblast",
+    "population": 18000,
+    "lat": 50.4280,
+    "lng": 41.0150,
+    "distance_km": 120,
+    "delivery_terms": "Доставка до объекта — от 2 000 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Работаем в Калачеевском районе — 20+ выполненных объектов",
+      "Смета под ключ: материалы + доставка + монтаж",
+      "Материалы нарезаем в размер под ваш объект",
+      "Собственный транспорт — доставка длинномеров до 12м",
+      "Гарантия на работы — 10 лет по договору"
+    ],
+    "photos": ["/wp-content/uploads/geo/kalach-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 500, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 650, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "штукатурка"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "liski",
+    "name": "Лиски",
+    "region": "voronezhskaya-oblast",
+    "population": 53000,
+    "lat": 50.9770,
+    "lng": 39.5080,
+    "distance_km": 200,
+    "delivery_terms": "Доставка до объекта — от 3 000 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Крупный узловой город — удобная логистика материалов",
+      "Подбор оптимального материала под бюджет и задачу",
+      "Смета под ключ: материалы + доставка + монтаж",
+      "Бригада работает без выходных в сезон",
+      "Фотоотчёт с объекта каждый день в WhatsApp"
+    ],
+    "photos": ["/wp-content/uploads/geo/liski-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "фальцевая"]},
+      "fasady": {"price_from": 680, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели", "вентфасад"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "ostrogozhsk",
+    "name": "Острогожск",
+    "region": "voronezhskaya-oblast",
+    "population": 32000,
+    "lat": 50.8590,
+    "lng": 39.0600,
+    "distance_km": 230,
+    "delivery_terms": "Доставка до объекта — от 3 500 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Историческая застройка — опыт работы со старыми зданиями",
+      "Экспресс-расчёт по фото за 30 минут",
+      "Материалы нарезаем в размер под объект",
+      "Помощь с оформлением рассрочки",
+      "Бесплатная консультация по выбору материалов"
+    ],
+    "photos": ["/wp-content/uploads/geo/ostrogozhsk-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 530, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 680, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "штукатурка"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "novohopersk",
+    "name": "Новохопёрск",
+    "region": "voronezhskaya-oblast",
+    "population": 6400,
+    "lat": 51.0960,
+    "lng": 41.6260,
+    "distance_km": 60,
+    "delivery_terms": "Доставка до объекта — от 1 500 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 2,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Ближайший к базе район — минимальная стоимость доставки",
+      "Регулярные выезды бригады 3-4 раза в неделю",
+      "Более 15 выполненных объектов в Новохопёрском районе",
+      "Замерщик приедет в день обращения",
+      "Работаем даже с небольшими объёмами — от 20 м²"
+    ],
+    "photos": ["/wp-content/uploads/geo/novohopersk-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 470, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 620, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1200, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "povorino",
+    "name": "Поворино",
+    "region": "voronezhskaya-oblast",
+    "population": 16000,
+    "lat": 51.1960,
+    "lng": 42.2440,
+    "distance_km": 25,
+    "delivery_terms": "Доставка до объекта бесплатно от 30 000 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 2,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Ближайший город к складу — доставка в день заказа",
+      "Более 50 выполненных объектов в Поворино и районе",
+      "Экспресс-расчёт по фото за 30 минут",
+      "Смета под ключ: материалы + доставка + монтаж",
+      "Образцы материалов всех цветов RAL в наличии"
+    ],
+    "photos": ["/wp-content/uploads/geo/povorino-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 450, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица", "мягкая кровля"]},
+      "fasady": {"price_from": 600, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1200, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "сетка-рабица"]}
+    }
+  },
+  {
+    "slug": "gribanovsky",
+    "name": "Грибановский",
+    "region": "voronezhskaya-oblast",
+    "population": 10000,
+    "lat": 51.4440,
+    "lng": 41.5190,
+    "distance_km": 45,
+    "delivery_terms": "Доставка до объекта — от 1 500 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 2,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Близость к складу — быстрая доставка за 1 день",
+      "Работаем по всему Грибановскому району",
+      "Замерщик с образцами приедет бесплатно",
+      "Нарезка материалов точно в размер вашего объекта",
+      "Гарантия на монтажные работы — 10 лет"
+    ],
+    "photos": ["/wp-content/uploads/geo/gribanovsky-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 470, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 620, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1200, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "ertil",
+    "name": "Эртиль",
+    "region": "voronezhskaya-oblast",
+    "population": 10000,
+    "lat": 51.8410,
+    "lng": 40.8110,
+    "distance_km": 90,
+    "delivery_terms": "Доставка до объекта — от 2 000 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 3,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Работаем в Эртильском районе с 2020 года",
+      "Подбор материала под бюджет — от эконом до премиум",
+      "Экспресс-расчёт по фото за 30 минут",
+      "Фиксированная цена без скрытых доплат",
+      "Ежедневные фотоотчёты хода работ"
+    ],
+    "photos": ["/wp-content/uploads/geo/ertil-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 490, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 640, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "штукатурка"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "panino",
+    "name": "Панино",
+    "region": "voronezhskaya-oblast",
+    "population": 8500,
+    "lat": 51.6300,
+    "lng": 40.1200,
+    "distance_km": 150,
+    "delivery_terms": "Доставка до объекта — от 2 500 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Замерщик с образцами выезжает на объект бесплатно",
+      "Материалы нарезаем точно в размер",
+      "Поможем оформить рассрочку на монтаж",
+      "Фотоотчёт каждый день в WhatsApp/Telegram",
+      "Гарантия на монтаж — 10 лет"
+    ],
+    "photos": ["/wp-content/uploads/geo/panino-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "balashov",
+    "name": "Балашов",
+    "region": "saratovskaya-oblast",
+    "population": 76000,
+    "lat": 51.5500,
+    "lng": 43.1660,
+    "distance_km": 80,
+    "delivery_terms": "Доставка до объекта — от 2 000 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 3,
+    "payment_terms": "Предоплата 30%, остаток при приёмке. Рассрочка до 6 мес.",
+    "offices": [],
+    "unique_facts": [
+      "Крупнейший город зоны обслуживания в Саратовской области",
+      "Более 60 выполненных объектов в Балашове и районе",
+      "Консультация и подбор материалов бесплатно",
+      "Возможна рассрочка до 6 месяцев без переплат",
+      "Замерщик с каталогом приедет за 24 часа",
+      "Работаем без выходных в строительный сезон"
+    ],
+    "photos": ["/wp-content/uploads/geo/balashov-1.jpg", "/wp-content/uploads/geo/balashov-2.jpg"],
+    "services": {
+      "krovlya": {"price_from": 480, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 630, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели", "штукатурка"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "arkadak",
+    "name": "Аркадак",
+    "region": "saratovskaya-oblast",
+    "population": 11000,
+    "lat": 51.9330,
+    "lng": 43.5000,
+    "distance_km": 130,
+    "delivery_terms": "Доставка до объекта — от 2 500 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Регулярные выезды бригады в Аркадакский район",
+      "Материалы нарезаем в размер — экономия до 15%",
+      "Смета под ключ: материалы + доставка + монтаж",
+      "Гарантия на все виды работ — 10 лет",
+      "Экспресс-расчёт по фото за 30 минут"
+    ],
+    "photos": ["/wp-content/uploads/geo/arkadak-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "штукатурка"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "romanovka",
+    "name": "Романовка",
+    "region": "saratovskaya-oblast",
+    "population": 6500,
+    "lat": 51.8240,
+    "lng": 43.2350,
+    "distance_km": 110,
+    "delivery_terms": "Доставка до объекта — от 2 500 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Выезд бригады в Романовский район по графику",
+      "Подбор материала под любой бюджет",
+      "Замерщик приедет с образцами цветов и фактур",
+      "Фиксированная цена в договоре",
+      "Работаем даже с небольшими объёмами"
+    ],
+    "photos": ["/wp-content/uploads/geo/romanovka-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "turki",
+    "name": "Турки",
+    "region": "saratovskaya-oblast",
+    "population": 5200,
+    "lat": 52.0690,
+    "lng": 43.2650,
+    "distance_km": 140,
+    "delivery_terms": "Доставка до объекта — от 3 000 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Работаем в Турковском районе по заявкам",
+      "Экспресс-расчёт по фото за 30 минут",
+      "Смета под ключ с фиксированной ценой",
+      "Нарезка материалов точно в размер",
+      "Гарантия на монтаж — 10 лет"
+    ],
+    "photos": ["/wp-content/uploads/geo/turki-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 540, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 690, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1400, "price_unit": "₽/пог.м", "popular_materials": ["профнастил"]}
+    }
+  },
+  {
+    "slug": "samoylovka",
+    "name": "Самойловка",
+    "region": "saratovskaya-oblast",
+    "population": 6000,
+    "lat": 51.4420,
+    "lng": 43.5510,
+    "distance_km": 120,
+    "delivery_terms": "Доставка до объекта — от 2 500 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Регулярные выезды в Самойловский район",
+      "Подбор материала под бюджет и задачу",
+      "Замерщик приедет с образцами бесплатно",
+      "Материалы от заводов-изготовителей без наценки",
+      "Фотоотчёт каждый день"
+    ],
+    "photos": ["/wp-content/uploads/geo/samoylovka-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "kalininsk",
+    "name": "Калининск",
+    "region": "saratovskaya-oblast",
+    "population": 15000,
+    "lat": 51.5070,
+    "lng": 44.4800,
+    "distance_km": 200,
+    "delivery_terms": "Доставка до объекта — от 3 500 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Работаем в Калининском районе по заявкам",
+      "Экспресс-расчёт стоимости по фото за 30 минут",
+      "Подбор материала под бюджет — от эконом до премиум",
+      "Фиксированная цена в договоре",
+      "Гарантия на работы — 10 лет"
+    ],
+    "photos": ["/wp-content/uploads/geo/kalininsk-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 540, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 690, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "штукатурка"]},
+      "zabory": {"price_from": 1400, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "rtishchevo",
+    "name": "Ртищево",
+    "region": "saratovskaya-oblast",
+    "population": 38000,
+    "lat": 52.2620,
+    "lng": 43.7900,
+    "distance_km": 180,
+    "delivery_terms": "Доставка до объекта — от 3 000 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Крупный ж/д узел — удобная логистика материалов",
+      "Замерщик с образцами выезжает бесплатно",
+      "Смета под ключ: материалы + доставка + монтаж",
+      "Более 20 выполненных объектов в Ртищево",
+      "Рассрочка до 4 месяцев без переплат"
+    ],
+    "photos": ["/wp-content/uploads/geo/rtishchevo-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 530, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 680, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "mikhaylovka",
+    "name": "Михайловка",
+    "region": "volgogradskaya-oblast",
+    "population": 58000,
+    "lat": 50.0590,
+    "lng": 43.2330,
+    "distance_km": 160,
+    "delivery_terms": "Доставка до объекта — от 3 000 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток при приёмке. Рассрочка до 6 мес.",
+    "offices": [],
+    "unique_facts": [
+      "Крупнейший город зоны обслуживания в Волгоградской области",
+      "Более 35 выполненных объектов в Михайловке",
+      "Проектирование и 3D-моделирование при необходимости",
+      "Смета под ключ: материалы + доставка + монтаж",
+      "Работаем без выходных в строительный сезон"
+    ],
+    "photos": ["/wp-content/uploads/geo/mikhaylovka-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели", "штукатурка"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "novoanninsky",
+    "name": "Новоаннинский",
+    "region": "volgogradskaya-oblast",
+    "population": 16000,
+    "lat": 50.5290,
+    "lng": 42.6710,
+    "distance_km": 130,
+    "delivery_terms": "Доставка до объекта — от 2 500 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Регулярные выезды в Новоаннинский район",
+      "Материалы нарезаем в размер — минимум отходов",
+      "Смета с фиксированной ценой без доплат",
+      "Замерщик с каталогом приедет бесплатно",
+      "Гарантия на монтаж — 10 лет"
+    ],
+    "photos": ["/wp-content/uploads/geo/novoanninsky-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "uryupinsk",
+    "name": "Урюпинск",
+    "region": "volgogradskaya-oblast",
+    "population": 37000,
+    "lat": 50.7950,
+    "lng": 42.0010,
+    "distance_km": 70,
+    "delivery_terms": "Доставка до объекта — от 1 500 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 3,
+    "payment_terms": "Предоплата 30%, остаток при приёмке. Рассрочка до 4 мес.",
+    "offices": [],
+    "unique_facts": [
+      "Столица российской провинции — активное частное строительство",
+      "Более 40 выполненных объектов в Урюпинске и районе",
+      "Экспресс-расчёт по фото за 30 минут",
+      "Подбор оптимального материала под климат региона",
+      "Близость к складу — быстрая доставка за 1-2 дня"
+    ],
+    "photos": ["/wp-content/uploads/geo/uryupinsk-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 480, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица", "мягкая кровля"]},
+      "fasady": {"price_from": 630, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "kamyshin",
+    "name": "Камышин",
+    "region": "volgogradskaya-oblast",
+    "population": 108000,
+    "lat": 50.0840,
+    "lng": 45.4010,
+    "distance_km": 300,
+    "delivery_terms": "Доставка до объекта — от 5 000 ₽ (зависит от объёма)",
+    "delivery_days_min": 3,
+    "delivery_days_max": 7,
+    "payment_terms": "Предоплата 40%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Крупный промышленный город — большой объём частного строительства",
+      "Более 15 выполненных объектов в Камышине",
+      "Комплексные решения: кровля + фасад + забор под ключ",
+      "Проектирование кровельных систем под сложную геометрию",
+      "Гарантия на работы — 10 лет по договору"
+    ],
+    "photos": ["/wp-content/uploads/geo/kamyshin-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 550, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 700, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "вентфасад"]},
+      "zabory": {"price_from": 1400, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "frolovo",
+    "name": "Фролово",
+    "region": "volgogradskaya-oblast",
+    "population": 36000,
+    "lat": 49.7660,
+    "lng": 43.6600,
+    "distance_km": 220,
+    "delivery_terms": "Доставка до объекта — от 4 000 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Работаем во Фроловском районе по заявкам",
+      "Экспресс-расчёт стоимости по фото за 30 минут",
+      "Материалы с заводов без посредников",
+      "Фиксированная цена в договоре без доплат",
+      "Фотоотчёт каждый день"
+    ],
+    "photos": ["/wp-content/uploads/geo/frolovo-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 540, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 690, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1400, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "tambov",
+    "name": "Тамбов",
+    "region": "tambovskaya-oblast",
+    "population": 292000,
+    "lat": 52.7212,
+    "lng": 41.4523,
+    "distance_km": 180,
+    "delivery_terms": "Доставка до объекта — от 3 000 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток при приёмке. Рассрочка до 6 мес.",
+    "offices": [],
+    "unique_facts": [
+      "Областной центр — наибольший рынок частного строительства в регионе",
+      "Более 50 выполненных объектов в Тамбове и пригороде",
+      "Подбор материала под бюджет — от эконом до премиум класса",
+      "Экспресс-расчёт по фото за 30 минут в WhatsApp/Telegram",
+      "Рассрочка до 6 месяцев без переплат по договору",
+      "Бригада работает без выходных в строительный сезон"
+    ],
+    "photos": ["/wp-content/uploads/geo/tambov-1.jpg", "/wp-content/uploads/geo/tambov-2.jpg"],
+    "services": {
+      "krovlya": {"price_from": 500, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля", "фальцевая"]},
+      "fasady": {"price_from": 650, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели", "штукатурка", "вентфасад"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка", "кирпичные столбы"]}
+    }
+  },
+  {
+    "slug": "rasskazovo",
+    "name": "Рассказово",
+    "region": "tambovskaya-oblast",
+    "population": 42000,
+    "lat": 52.6580,
+    "lng": 41.8820,
+    "distance_km": 160,
+    "delivery_terms": "Доставка до объекта — от 2 500 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Один из крупнейших городов Тамбовской области",
+      "Более 20 выполненных объектов",
+      "Экспресс-расчёт по фото за 30 минут",
+      "Материалы от производителей без наценки",
+      "Гарантия на все виды работ — 10 лет"
+    ],
+    "photos": ["/wp-content/uploads/geo/rasskazovo-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "michurinsk",
+    "name": "Мичуринск",
+    "region": "tambovskaya-oblast",
+    "population": 92000,
+    "lat": 52.8970,
+    "lng": 40.4930,
+    "distance_km": 220,
+    "delivery_terms": "Доставка до объекта — от 3 500 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток при приёмке. Рассрочка до 4 мес.",
+    "offices": [],
+    "unique_facts": [
+      "Второй по величине город Тамбовской области — наукоград",
+      "Активное строительство частных домов и коттеджей",
+      "Подбор материала под бюджет — от эконом до премиум",
+      "Экспресс-расчёт по фото за 30 минут",
+      "Бригада работает без выходных в сезон"
+    ],
+    "photos": ["/wp-content/uploads/geo/michurinsk-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели", "штукатурка"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "morshansk",
+    "name": "Моршанск",
+    "region": "tambovskaya-oblast",
+    "population": 38000,
+    "lat": 53.4430,
+    "lng": 41.8110,
+    "distance_km": 250,
+    "delivery_terms": "Доставка до объекта — от 4 000 ₽",
+    "delivery_days_min": 2,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Старинный город с богатой архитектурой",
+      "Опыт работы с деревянными и кирпичными домами",
+      "Материалы нарезаем в размер — экономия до 15%",
+      "Смета под ключ с фиксированной ценой",
+      "Гарантия на монтаж — 10 лет"
+    ],
+    "photos": ["/wp-content/uploads/geo/morshansk-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 530, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 680, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "штукатурка"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "kirsanov",
+    "name": "Кирсанов",
+    "region": "tambovskaya-oblast",
+    "population": 16000,
+    "lat": 52.6500,
+    "lng": 42.7250,
+    "distance_km": 100,
+    "delivery_terms": "Доставка до объекта — от 2 000 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 3,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Удобное расположение — быстрая доставка с базового склада",
+      "Более 15 выполненных объектов в Кирсановском районе",
+      "Замерщик с образцами выезжает бесплатно",
+      "Смета под ключ: материалы + доставка + монтаж",
+      "Фотоотчёт каждый день в WhatsApp/Telegram"
+    ],
+    "photos": ["/wp-content/uploads/geo/kirsanov-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 500, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 650, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "uvarovo",
+    "name": "Уварово",
+    "region": "tambovskaya-oblast",
+    "population": 23000,
+    "lat": 51.9850,
+    "lng": 42.2620,
+    "distance_km": 80,
+    "delivery_terms": "Доставка до объекта — от 1 500 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 3,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Близость к Борисоглебску — оперативная доставка",
+      "Более 25 выполненных объектов в Уварово и районе",
+      "Экспресс-расчёт по фото за 30 минут",
+      "Замерщик приедет с образцами цветов и материалов",
+      "Работаем с объёмами любого масштаба — от навеса до коттеджа"
+    ],
+    "photos": ["/wp-content/uploads/geo/uvarovo-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 490, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 640, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "zherdevka",
+    "name": "Жердевка",
+    "region": "tambovskaya-oblast",
+    "population": 14000,
+    "lat": 51.8420,
+    "lng": 41.4570,
+    "distance_km": 100,
+    "delivery_terms": "Доставка до объекта — от 2 000 ₽",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток при приёмке",
+    "offices": [],
+    "unique_facts": [
+      "Регулярные выезды бригады в Жердевский район",
+      "Экспресс-расчёт стоимости по фото за 30 минут",
+      "Материалы нарезаем точно в размер — минимум отходов",
+      "Фиксированная цена в договоре без скрытых доплат",
+      "Гарантия на все виды работ — 10 лет"
+    ],
+    "photos": ["/wp-content/uploads/geo/zherdevka-1.jpg"],
+    "services": {
+      "krovlya": {"price_from": 500, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 650, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "anninskiy-rayon",
+    "name": "Аннинский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Аннинскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке работ/материалов по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Выезд инженера по Аннинскому району — по записи, расчёт по фото в Telegram за 30 минут",
+      "Материалы режем в размер и комплектуем под объект — меньше отходов и пересортов"
+    ],
+    "services": {
+      "krovlya": {"price_from": 500, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 650, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "bobrovskiy-rayon",
+    "name": "Бобровский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Бобровскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке работ/материалов по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Бобровскому району: замер по записи, смета и раскладка — в Telegram",
+      "Доставка длинномеров до 12 м, комплектуем доборные элементы под цвет и покрытие"
+    ],
+    "services": {
+      "krovlya": {"price_from": 500, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 650, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1300, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "bogucharskiy-rayon",
+    "name": "Богучарский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Богучарскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт стоимости по фото для Богучарского района — в Telegram",
+      "Подбираем покрытие и комплектующие под уклон и ветровую нагрузку, фиксируем цену в договоре"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "buturlinovskiy-rayon",
+    "name": "Бутурлиновский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Бутурлиновскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Замер и подбор материалов по Бутурлиновскому району — по записи",
+      "Комплектуем кровлю «под ключ»: доборные элементы, крепёж, гидро- и пароизоляция"
+    ],
+    "services": {
+      "krovlya": {"price_from": 480, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 620, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "verhnemamonskiy-rayon",
+    "name": "Верхнемамонский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Верхнемамонскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Смета по Верхнемамонскому району: материалы + доставка + монтаж — одним документом",
+      "Подбираем покрытия и цвета по каталогу, согласование — в Telegram"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "verhnehavskiy-rayon",
+    "name": "Верхнехавский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Верхнехавскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Верхнехавскому району: замер по записи, расчёт по фото — в Telegram",
+      "Фиксируем цену в договоре, без скрытых доплат по ходу работ"
+    ],
+    "services": {
+      "krovlya": {"price_from": 490, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 640, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1280, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "vorobyevskiy-rayon",
+    "name": "Воробьевский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Воробьевскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Воробьевскому району: по фото/замерам, без звонков — в Telegram",
+      "Материалы и монтаж одной бригадой: меньше рисков и проще контроль"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "gribanovskiy-rayon",
+    "name": "Грибановский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Грибановскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Грибановскому району: выезд инженера по записи, смета — в Telegram",
+      "Комплектуем кровлю и доборы под конкретный размер — экономия на обрезках"
+    ],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1320, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "kantemirovskiy-rayon",
+    "name": "Кантемировский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Кантемировскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Смета по Кантемировскому району: считаем материалы и монтаж под ваш объект",
+      "Подбор цвета/покрытия и согласование сроков — в Telegram"
+    ],
+    "services": {
+      "krovlya": {"price_from": 530, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 680, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1380, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "novousmanskiy-rayon",
+    "name": "Новоусманский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Новоусманскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Новоусманскому району: замер по записи, смета — в Telegram",
+      "Доставка и монтаж одной командой — быстро и без «перевода стрелок»"
+    ],
+    "services": {
+      "krovlya": {"price_from": 480, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 620, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "novokhoperskiy-rayon",
+    "name": "Новохоперский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Новохоперскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Новохоперскому району: по фото и замерам — в Telegram",
+      "Комплектуем кровлю под ключ: покрытие, доборы, крепёж и изоляции"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "ostrogozhskiy-rayon",
+    "name": "Острогожский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Острогожскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Острогожскому району: инженер выезжает по записи, смета — в Telegram",
+      "Подбор цвета по RAL и комплектующих — под объект, без переплат за лишнее"
+    ],
+    "services": {
+      "krovlya": {"price_from": 490, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 640, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1280, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "pavlovskiy-rayon",
+    "name": "Павловский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Павловскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Смета по Павловскому району: материалы + доставка + монтаж — под ключ",
+      "Контроль работ и фотоотчёт — в Telegram"
+    ],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1320, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "paninskiy-rayon",
+    "name": "Панинский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Панинскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Панинскому району: выезд инженера по записи, смета — в Telegram",
+      "Материалы комплектуем заранее, чтобы монтаж не простаивал из-за доборов"
+    ],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1320, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "povorinskiy-rayon",
+    "name": "Поворинский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Поворинскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Смета по Поворинскому району: считаем под ваш объект, без лишних позиций",
+      "Оформление и сопровождение заказа — в Telegram, без звонков"
+    ],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1320, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "podgorenskiy-rayon",
+    "name": "Подгоренский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Подгоренскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Подгоренскому району: по фото/замерам — в Telegram",
+      "Комплектуем доборные элементы и крепёж — монтаж без остановок"
+    ],
+    "services": {
+      "krovlya": {"price_from": 530, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 680, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1380, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "ramonskiy-rayon",
+    "name": "Рамонский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Рамонскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Рамонскому району: замер по записи, расчёт и смета — в Telegram",
+      "Подбираем материал под ваш уклон и архитектуру, фиксируем сроки в договоре"
+    ],
+    "services": {
+      "krovlya": {"price_from": 480, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 620, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "rossoshanskiy-rayon",
+    "name": "Россошанский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Россошанскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Смета по Россошанскому району: материалы и монтаж — под ключ",
+      "Фотоотчёт работ и согласование изменений — в Telegram"
+    ],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1320, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "semilukskiy-rayon",
+    "name": "Семилукский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Семилукскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Семилукскому району: замер по записи, смета — в Telegram",
+      "Комплектуем и доставляем материалы на объект в согласованный день"
+    ],
+    "services": {
+      "krovlya": {"price_from": 480, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 620, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "talovskiy-rayon",
+    "name": "Таловский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Таловскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Таловскому району: по фото/замерам — в Telegram",
+      "Помогаем выбрать покрытие и доборы, чтобы не переплатить за лишнее"
+    ],
+    "services": {
+      "krovlya": {"price_from": 530, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 680, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1380, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "ternovskiy-rayon",
+    "name": "Терновский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Терновскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Смета по Терновскому району: считаем материалы и монтаж под ваш объект",
+      "Согласование выезда и условий — в Telegram, без звонков"
+    ],
+    "services": {
+      "krovlya": {"price_from": 530, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 680, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1380, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "khokholskiy-rayon",
+    "name": "Хохольский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Хохольскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 4,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Хохольскому району: инженер выезжает по записи, смета — в Telegram",
+      "Помогаем подобрать покрытие и цвет, комплектуем крепёж и доборы"
+    ],
+    "services": {
+      "krovlya": {"price_from": 480, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 620, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1250, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "ertilskiy-rayon",
+    "name": "Эртильский район",
+    "region": "voronezhskaya-oblast",
+    "delivery_terms": "Доставка по Эртильскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Эртильскому району: по фото/замерам — в Telegram",
+      "Комплектуем кровлю и фасад под ключ, доставляем на объект в согласованный день"
+    ],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1320, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "arkadakskiy-rayon",
+    "name": "Аркадакский район",
+    "region": "saratovskaya-oblast",
+    "delivery_terms": "Доставка по Аркадакскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Аркадакскому району: смета и согласование — в Telegram",
+      "Комплектуем материалы под объект: покрытие, доборы, крепёж, изоляции"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "balashovskiy-rayon",
+    "name": "Балашовский район",
+    "region": "saratovskaya-oblast",
+    "delivery_terms": "Доставка по Балашовскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Смета по Балашовскому району: материалы + доставка + монтаж — под ключ",
+      "Фотоотчёт и согласование этапов — в Telegram"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "rtishchevskiy-rayon",
+    "name": "Ртищевский район",
+    "region": "saratovskaya-oblast",
+    "delivery_terms": "Доставка по Ртищевскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Ртищевскому району: по фото/замерам — в Telegram",
+      "Комплектуем доборы и крепёж под ваш проект — монтаж без простоев"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "samoylovskiy-rayon",
+    "name": "Самойловский район",
+    "region": "saratovskaya-oblast",
+    "delivery_terms": "Доставка по Самойловскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Самойловскому району: инженер выезжает по записи, смета — в Telegram",
+      "Подбор материалов под ваш бюджет и срок — быстро, без лишних позиций"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "alekseevskiy-rayon",
+    "name": "Алексеевский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Алексеевскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Алексеевскому району: по фото/замерам — в Telegram",
+      "Подбор материалов и комплектующих — под ваш объект, без лишних позиций"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "elanskiy-rayon",
+    "name": "Еланский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Еланскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Еланскому району: смета и согласование — в Telegram",
+      "Материалы комплектуем и доставляем на объект в согласованный день"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "zhirnovskiy-rayon",
+    "name": "Жирновский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Жирновскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Жирновскому району: по фото/замерам — в Telegram",
+      "Подбор материалов под ваш бюджет и срок, фиксируем условия в договоре"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "ilovlinskiy-rayon",
+    "name": "Иловлинский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Иловлинскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Иловлинскому району: замер по записи, смета — в Telegram",
+      "Комплектуем материалы под объект и согласуем доставку под удобный день"
+    ],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1320, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "kikvidzenskiy-rayon",
+    "name": "Киквидзенский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Киквидзенскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Киквидзенскому району: по фото/замерам — в Telegram",
+      "Помогаем выбрать покрытие и комплектующие, чтобы избежать лишних расходов"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "kumylzhenskiy-rayon",
+    "name": "Кумылженский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Кумылженскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Кумылженскому району: смета и согласование — в Telegram",
+      "Комплектуем доборы и крепёж заранее — монтаж без остановок"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "nekhaevskiy-rayon",
+    "name": "Нехаевский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Нехаевскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Нехаевскому району: по фото/замерам — в Telegram",
+      "Подбор материалов под ваш объект и согласование сроков — без звонков"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "nikolaevskiy-rayon",
+    "name": "Николаевский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Николаевскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Николаевскому району: замер по записи, смета — в Telegram",
+      "Комплектуем материалы под ключ и доставляем на объект в согласованный день"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "novoanninskiy-rayon",
+    "name": "Новоаннинский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Новоаннинскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Новоаннинскому району: по фото/замерам — в Telegram",
+      "Материалы режем в размер и комплектуем под объект — меньше отходов"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "novonikolaevskiy-rayon",
+    "name": "Новониколаевский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Новониколаевскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Новониколаевскому району: смета и согласование — в Telegram",
+      "Подбор материалов и комплектующих — под ваш объект, фиксируем условия"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "rudnyanskiy-rayon",
+    "name": "Руднянский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Руднянскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 6,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Руднянскому району: по фото/замерам — в Telegram",
+      "Комплектуем материалы под ключ и согласуем доставку под удобный день"
+    ],
+    "services": {
+      "krovlya": {"price_from": 520, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил"]},
+      "fasady": {"price_from": 670, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1350, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  },
+  {
+    "slug": "uryupinskiy-rayon",
+    "name": "Урюпинский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Урюпинскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Работаем по Урюпинскому району: смета и согласование — в Telegram",
+      "Доставка материалов и выход бригады — по графику, фиксируем в договоре"
+    ],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["металлочерепица", "профнастил", "мягкая кровля"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг", "фасадные панели"]},
+      "zabory": {"price_from": 1320, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник", "3D-сетка"]}
+    }
+  },
+  {
+    "slug": "frolovskiy-rayon",
+    "name": "Фроловский район",
+    "region": "volgogradskaya-oblast",
+    "delivery_terms": "Доставка по Фроловскому району — по смете. Срок и стоимость согласуем в Telegram.",
+    "delivery_days_min": 1,
+    "delivery_days_max": 5,
+    "payment_terms": "Предоплата 30%, остаток — при приёмке по договору.",
+    "offices": [],
+    "unique_facts": [
+      "Экспресс-расчёт по Фроловскому району: по фото/замерам — в Telegram",
+      "Материалы комплектуем под объект и доставляем на участок в согласованный день"
+    ],
+    "services": {
+      "krovlya": {"price_from": 510, "price_unit": "₽/м²", "popular_materials": ["профнастил", "металлочерепица"]},
+      "fasady": {"price_from": 660, "price_unit": "₽/м²", "popular_materials": ["сайдинг"]},
+      "zabory": {"price_from": 1320, "price_unit": "₽/пог.м", "popular_materials": ["профнастил", "евроштакетник"]}
+    }
+  }
+]

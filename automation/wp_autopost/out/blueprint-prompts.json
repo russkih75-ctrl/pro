@@ -1,0 +1,102 @@
+{
+  "wordstat": [
+    {
+      "module": "app#wordstat-xey6ii:vvv",
+      "user_text": "",
+      "developer_text": ""
+    }
+  ],
+  "nanobanana": [
+    {
+      "module": "app#nanobanana-isjuj6:bananapro",
+      "prompt": "Main Objective: Create a photorealistic PREMIUM ARCHITECTURE cover image for an article about roofing and installation.\nTheme: {{40.content}}\n\nRELEVANCE RULE (STRICT):\n- The image MUST match the intent and exact object of the Theme.\n- If Theme mentions a specific material/type (металлочерепица/профнастил/мягкая кровля/фальц) — show THAT type, not a random one.\n- If Theme implies intent (\"монтаж\", \"ошибки\", \"узлы\", \"цена\", \"выбор\") — show the corresponding scene (see SCENE VARIETY).\n\nSTYLE: Pinterest / Premium Architecture + Apple-style rich-content overlay.\n\nSCENE VARIETY (ROTATE + RELEVANT):\n- Roof MUST always be clearly visible.\n- Rotate scenes and keep them relevant to Theme intent:\n  • монтаж/узлы: close-up of ridge/valley/eaves, fasteners, membranes, ventilation, gutters (roof in frame)\n  • выбор/цвет: hands with sample boards + roof behind; facade + roof palette comparison\n  • цена/смета: measurer with samples + clipboard/tablet; office/showroom with sample stands + roof behind\n  • ошибки/ремонт: inspection moment, minor defect detail, correct vs wrong element (roof in frame)\n  • доставка: yard delivery of materials + finished roof visible\n\nCOLOR RULE (STRICT):\n- Use 1 dominant roof color per image (max 2). Only real colors that exist in RAL roofing palettes.\n- Examples: RAL 3005, 6005, 7024, 8017, 9005, 9010 (DO NOT print RAL codes in the image).\n\nMATERIAL REALISM (HARD RANDOM + VARIETY):\n- IMPORTANT: DO NOT default to standing seam. If the theme does NOT specify a type — PICK RANDOMLY.\n- Show ONE main roofing type per image (rotate across runs):\n  A) metal tile / металлочерепица (different wave profiles, modular/classic look)\n  B) profiled sheet / профнастил (different trapezoid corrugation depth)\n  C) soft roof / мягкая кровля / гибкая черепица (different shingle cuts: hex, rectangle, \"dragon tooth\")\n  D) standing seam / фальц (use less often unless explicitly requested by the theme)\n- COATINGS (rotate): matte, semi-matte, glossy, textured (no printed labels).\n- Premium colors only (real RAL palettes), realistic gloss, micro-texture, reflections.\n- Add supporting elements where relevant: gutters, soffits, snow guards.\n- We work with materials like Технониколь / GrandLine / Металлопрофиль, but DO NOT show their logos or text.\nSTRICT IDENTITY RULE (NO EXCEPTIONS):\n- Use the FIRST face reference from image_input as the identity anchor.\n- The person in the final image MUST be the same person (identity lock).\n\nSTRICT BRAND RULE (NO EXCEPTIONS):\n- The clothing MUST have a visible, readable brand patch with the exact text: kvadratyra (Latin letters).\n- No other Latin/English words anywhere in the image.\n\nRICH CONTENT (APPLE STYLE):\n- Overlay 3–5 minimalistic icon+label chips (Russian) with subtle provocation + real value.\n- Examples of chips (pick 3–5):\n  • «Замерщик с образцами»\n  • «Смета без “от‑до”»\n  • «Рассрочка»\n  • «Оплата по прибытии материала»\n  • «Договор + страховой случай»\n  • «Срок службы от 15 лет»\n  • «3D‑проект до монтажа»\n  • «Офисы: Воронеж/Саратов/Тамбов/Волгоград»\n- Icons: clean Apple-like line icons, monochrome.\n\nTYPOGRAPHY:\n- Headline (Russian): «Кровля + монтаж»\n- Subheadline: short phrase from Theme '{{40.content}}' (shorten if needed).\n- Add a CTA button-like element: «Смотреть предложения на Avito» (no URL text).\n\nHUMAN:\n- Second plan, but face and kvadratyra patch must be clearly visible.\n- Premium builder/architect vibe; not a worker, not a blogger.\n\nNEGATIVE: cartoon, illustration, 3d render, obvious AI look, CGI, \"AI-generated\" text, watermark, random text, messy typography, distorted face, missing logo",
+      "image_input": [
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/image_1771525065585_tn33pe.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/1771516545119-k15c0ipvzx.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/image_1771525065585_tn33pe.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/1771516545119-k15c0ipvzx.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/image_1771525065585_tn33pe.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/1771516545119-k15c0ipvzx.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/image_1771525065585_tn33pe.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/1771516545119-k15c0ipvzx.jpg"
+      ],
+      "aspect_ratio": "16:9",
+      "resolution": "1K",
+      "output_format": "jpg"
+    },
+    {
+      "module": "app#nanobanana-isjuj6:bananapro",
+      "prompt": "Create a photorealistic premium banner for the construction brand kvadratyra.\nTopic: {{40.content}} (use this as the main semantic anchor)\n\nRELEVANCE RULE (STRICT):\n- Banner MUST be directly relevant to Topic (keyword intent + object).\n- If Topic mentions a specific material/type (металлочерепица/профнастил/мягкая кровля/фальц) — show THAT type, not a random one.\n- If Topic implies intent (\"монтаж\", \"ошибки\", \"узлы\", \"цена\", \"выбор\") — show the corresponding scene.\n\nSTYLE: Pinterest / Premium Architecture + Apple-style rich content.\n\nSCENE VARIETY (ROTATE + RELEVANT):\n- Roof MUST always be clearly visible.\n- Rotate scenes and keep them relevant:\n  • монтаж/узлы: ridge/valley/eaves details, ventilation outlet, membranes, fasteners (roof in frame)\n  • выбор/цвет: sample boards + roof behind; facade + roof palette comparison\n  • цена/смета: measurer with samples + tablet/clipboard; showroom/office with sample stands + roof visible\n  • ошибки/ремонт: inspection moment, correct vs wrong element (roof in frame)\n  • доставка: yard delivery + finished roof visible\n\nCOLOR RULE (STRICT):\n- 1 dominant roof color per banner (max 2). Only real RAL roofing colors (do not print RAL codes).\n\nMATERIAL REALISM (HARD RANDOM + VARIETY):\n- IMPORTANT: DO NOT default to standing seam. If the topic does NOT specify a type — PICK RANDOMLY.\n- Show ONE main roofing type per banner (rotate across runs):\n  A) металлочерепица (different wave profiles, modular/classic look)\n  B) профнастил (different trapezoid corrugation depth)\n  C) мягкая кровля / гибкая черепица (different shingle cuts: hex/rectangle/\"dragon tooth\")\n  D) фальц (use less often unless explicitly requested by the topic)\n- COATINGS (rotate): matte, semi-matte, glossy, textured (no printed labels).\n- Premium colors only (real RAL palettes), realistic texture; include gutters/soffits where appropriate.\n- We work with materials like Технониколь / GrandLine / Металлопрофиль, but DO NOT show their logos or text.\nSTRICT IDENTITY RULE (NO EXCEPTIONS):\n- Use the FIRST face reference from image_input as the identity anchor.\n- The person in the final banner MUST be the same person (identity lock).\n\nSTRICT BRAND RULE (NO EXCEPTIONS):\n- Clothing MUST have a visible, readable brand patch with the exact text: kvadratyra (Latin letters).\n- No other Latin/English words anywhere.\n\nRICH CONTENT (APPLE STYLE):\n- Add 3–5 minimal icon+label chips (Russian) with value.\n- Use chips like: «Замерщик с образцами», «Смета без “от‑до”», «Рассрочка», «Оплата по прибытии», «Договор + страховой случай», «3D‑проект до монтажа», «Офисы: Воронеж/Саратов/Тамбов/Волгоград».\n\nTYPOGRAPHY:\n- Main headline (Russian): «Кровля + монтаж»\n- Secondary: short phrase that reflects the Topic intent.\n- CTA button-like element (no URL): «Смотреть предложения на Avito»\n\nHUMAN:\n- Second plan, but face and the kvadratyra patch must be clearly visible.\n- Premium builder/architect vibe.\n\nNEGATIVE: cartoon, illustration, 3d render, obvious AI look, CGI, \"AI-generated\" text, watermark, random text, messy typography, distorted face, missing logo",
+      "image_input": [
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/image_1771525065585_tn33pe.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/1771516545119-k15c0ipvzx.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/image_1771525065585_tn33pe.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/1771516545119-k15c0ipvzx.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/image_1771525065585_tn33pe.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/1771516545119-k15c0ipvzx.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/image_1771525065585_tn33pe.jpg",
+        "https://kvadratyra.ru/wp-content/uploads/2026/02/1771516545119-k15c0ipvzx.jpg"
+      ],
+      "aspect_ratio": "21:9",
+      "resolution": "1K",
+      "output_format": "jpg"
+    }
+  ],
+  "wordpress": [
+    {
+      "module": "app#wpfree-z7ipu7:create",
+      "mapper_keys": [
+        "alt_text",
+        "data",
+        "featured_type",
+        "fileName",
+        "title"
+      ]
+    },
+    {
+      "module": "app#wpfree-z7ipu7:create",
+      "mapper_keys": [
+        "alt_text",
+        "caption",
+        "data",
+        "description",
+        "featured_type",
+        "fileName",
+        "title"
+      ]
+    },
+    {
+      "module": "app#wpfree-z7ipu7:post",
+      "mapper_keys": [
+        "author",
+        "categories",
+        "comment_status",
+        "content",
+        "featured_media",
+        "slug",
+        "status",
+        "title",
+        "type"
+      ]
+    }
+  ],
+  "article_prompts": [
+    {
+      "user_text": "Ты — системный редактор, валидатор и трансформатор контента. Пишешь по-русски, живо и по делу.\r\n\r\n## Цель\r\nСделать практичную статью-гайд для владельцев домов в РФ по теме кровли: монтаж кровли и кровельные материалы. Допускаются упоминания материалов для фасада и забора (только материалы).\r\nБренд: kvadratyra.\r\nЖелаемая длина: ~7 000 символов.\r\n\r\n## Входные данные\r\nТема (держи в голове, но H1 не пиши): {{40.content}}\r\nПоисковые фразы (используй органично): {{3.request1.phrases}} {{3.request2.phrases}} {{3.request3.phrases}}\r\nФактура и данные: {{41.content}}\r\n\r\n## Стиль\r\n- Без штампов и канцелярита.\r\n- Никаких чужих брендов и никаких IT-терминов.\r\n- Чередуй длину предложений.\r\n\r\n## СТРУКТУРА: Слоёный пирог\r\nИспользуй теги <h2>, <h3>, <p>, <table>, <ul>, <ol>, <details>, <summary>.\r\n\r\n### 1. Direct Answer\r\nПервый абзац: «[Понятие] — это [суть], которая [польза/результат]». До 50 слов.\r\n\r\n### 2. Человеческий слой\r\n1–2 абзаца: короткая жизненная ситуация про выбор/ремонт крыши.\r\n\r\n### 3. Структурированный гайд\r\n5–8 шагов (каждый шаг — <h3>). В каждом шаге: что делаем, зачем, типичная ошибка/подводный камень.\r\nОбязательно вставь минимум одну таблицу (<table>) сравнения кровельных материалов (например, металлочерепица/профнастил/гибкая черепица/фальц) по критериям: срок службы, шум, вес, бюджет, обслуживание.\r\n\r\n### 4. Коммерческий слой\r\nНативно: где смотреть варианты и как быстро получить консультацию.\r\nОбязательно добавь блок <h2>Почему kvadratyra — кровля + монтаж без сюрпризов</h2> и внутри <ul> строго факты:\r\n- <strong>Замерщик выезжает на объект с образцами</strong> и помогает выбрать материал и цвет.\r\n- <strong>Смета 100%</strong>: без «от‑до», всё внесено в договор.\r\n- <strong>Консультация на месте</strong>: можно обсудить узлы, вентиляцию, водостоки, утепление.\r\n- <strong>Рассрочка</strong> и <strong>оплата по прибытии материала на объект</strong> (если уместно по теме).\r\n- <strong>Монтаж + материалы</strong>: снимаем с владельца дома риск ошибок по размерам — мы замеряем, комплектуем, монтируем.\r\n- <strong>Договор + страховой случай</strong>, срок службы решений — <strong>от 15 лет</strong> (если зависит от материала — поясни).\r\n- <strong>3D архитектурный/проектный отдел</strong>: покажем, как будет выглядеть крыша до начала работ.\r\n- <strong>Офисы</strong>: Воронежская, Саратовская, Тамбовская, Волгоградская области (если тема про регион — упомяни).\r\n\r\n### 5. Баннер и контакты\r\nВ середину статьи вставь кликабельный баннер на Avito:\r\n<a href=\"https://www.avito.ru/brands/kvadratyra\"><img src=\"{{11.source_url}}\" alt=\"kvadratyra: кровля и монтаж\" /></a>\r\n<p><a href=\"https://www.avito.ru/brands/kvadratyra\">https://www.avito.ru/brands/kvadratyra</a></p>\r\nСразу после баннера добавь контакты:\r\n<p><strong>kvadratyra</strong>: <a href=\"https://www.avito.ru/brands/kvadratyra\">Смотреть предложения на Avito</a></p>\r\n<p><a href=\"https://t.me/kvadrat_yra\">Написать в Telegram</a></p>\r\n<p>Позвонить по телефону: 89003045190</p>\r\n\r\n### 6. FAQ\r\nВ конце: <h2>Частые вопросы</h2> и 5–7 блоков <details>/<summary> с короткими фактическими ответами.\r\n\r\n## Формат вывода\r\n- Только чистый HTML (без <html>/<body>, без markdown).\r\n- Без <h1>.\r\n- Никаких ссылок, кроме Avito и Telegram.\r\n\r\nТЕМА: {{40.content}}\r\nНапиши готовую статью.",
+      "developer_text": ""
+    }
+  ],
+  "meta_prompts": [
+    {
+      "user_text": "Вот текст статьи : {{42.content}}",
+      "developer_text": "Создай краткое мета-описание страницы (100–140 символов) по теме кровли: монтаж кровли и кровельные материалы.\nУпомяни бренд kvadratyra естественно. Без кликбейта.\nOutput: только одна строка."
+    }
+  ],
+  "guide_prompt_template": "Ты — практичный редактор kvadratyra. Пиши по-русски, без воды.\n\nЗадача: сделать короткий полезный гайд «как сделать самому» по теме: {{TOPIC}}.\nФокус: кровля/фасады/заборы (материалы + монтаж), без чужих брендов.\n\nСтруктура (HTML):\n1) <p>Direct Answer (до 50 слов): «[что это] — это [суть], которая [польза]».\n2) <h2>Что подготовить</h2> + <ul>чек-лист инструмента/материалов.\n3) <h2>Пошагово</h2> + 5-8 шагов (<h3>Шаг N</h3><p>...</p>).\n4) <h2>Типичные ошибки</h2> + <ul>.\n5) <h2>Проверка результата</h2> + короткий чек-лист.\n6) <h2>Если не получилось</h2> + мягкий CTA без давления.\n\nВ самом конце отдельным абзацем добавь ссылки:\n- Avito: https://www.avito.ru/brands/kvadratyra\n- Telegram: https://t.me/kvadrat_yra\n- Телефон: 89003045190\n- MAX чат помощи: https://max.ru/join/Eb2wTRuozpHOjt2n5uXqyzN0ouN6KLubNFZc_Zg71lU\n\nВыход: только готовый HTML.",
+  "guide_footer_links": {
+    "avito": "https://www.avito.ru/brands/kvadratyra",
+    "telegram": "https://t.me/kvadrat_yra",
+    "phone": "89003045190",
+    "max_chat": "https://max.ru/join/Eb2wTRuozpHOjt2n5uXqyzN0ouN6KLubNFZc_Zg71lU"
+  }
+}

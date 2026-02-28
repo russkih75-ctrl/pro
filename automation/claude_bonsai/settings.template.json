@@ -1,0 +1,7 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://go.trybons.ai",
+    "ANTHROPIC_AUTH_TOKEN": "PASTE_BONSAI_TOKEN_HERE",
+    "ANTHROPIC_API_KEY": "PASTE_BONSAI_TOKEN_HERE"
+  }
+}

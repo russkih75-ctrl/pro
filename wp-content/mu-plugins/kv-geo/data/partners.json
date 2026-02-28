@@ -1,0 +1,15 @@
+[
+  {
+    "id": "p-stal-servis",
+    "is_main": true,
+    "name": "Сталь Сервис",
+    "site_url": "https://yandex.ru/maps/org/stal_servis/1223018701/",
+    "is_paid": false,
+    "link_rel_default": "nofollow noopener noreferrer",
+    "default_utm": {
+      "utm_source": "kvadratyra",
+      "utm_medium": "referral",
+      "utm_campaign": "geo_partner_payment"
+    }
+  }
+]

@@ -1,0 +1,481 @@
+{
+  "generated_at": "2026-02-16",
+  "source": {
+    "tool": "mcp-kv wordstat_get_top_requests",
+    "mode": "per_oblast",
+    "notes": "Семантика собрана по 4 областям. Это базовая версия ядра по воронке (problem→solution→materials→price→calculator→installation/turnkey). Дальше будет расширяться и использоваться для генерации блоков GEO-страниц."
+  },
+  "regions": {
+    "voronezhskaya-oblast": {
+      "name": "Воронежская область",
+      "wordstat_region_id": 10672
+    },
+    "tambovskaya-oblast": {
+      "name": "Тамбовская область",
+      "wordstat_region_id": 10802
+    },
+    "saratovskaya-oblast": {
+      "name": "Саратовская область",
+      "wordstat_region_id": 11146
+    },
+    "volgogradskaya-oblast": {
+      "name": "Волгоградская область",
+      "wordstat_region_id": 10950
+    }
+  },
+  "services": [
+    { "slug": "krovlya", "name": "Кровля" },
+    { "slug": "fasady", "name": "Фасады" },
+    { "slug": "zabory", "name": "Заборы" }
+  ],
+  "intents": [
+    { "slug": "montazh", "stage_hints": ["installation", "contractor"] },
+    { "slug": "tsena", "stage_hints": ["price"] },
+    { "slug": "materialy", "stage_hints": ["materials", "compare"] },
+    { "slug": "remont", "stage_hints": ["problem", "repair"] },
+    { "slug": "pod-klyuch", "stage_hints": ["turnkey"] },
+    { "slug": "kalkulyator", "stage_hints": ["calculator"] }
+  ],
+  "core": [
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "krovlya",
+      "stage": "problem",
+      "base_phrase": "протекает крыша",
+      "intent_mapping": ["remont"],
+      "top": [
+        { "query": "протекает крыша", "shows": 143 },
+        { "query": "протекает крыша в доме", "shows": 26 },
+        { "query": "протекает крыша в многоквартирном доме", "shows": 13 },
+        { "query": "что делать если протекает крыша", "shows": 11 },
+        { "query": "протекает крыша кому обратиться", "shows": 10 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "krovlya",
+      "stage": "repair",
+      "base_phrase": "ремонт крыши",
+      "intent_mapping": ["remont"],
+      "top": [
+        { "query": "ремонт крыши", "shows": 388 },
+        { "query": "ремонт крыши воронеж", "shows": 61 },
+        { "query": "ремонт крыши дома", "shows": 44 },
+        { "query": "капитальный ремонт крыши", "shows": 23 },
+        { "query": "ремонт крыши гаража", "shows": 22 },
+        { "query": "ремонт крыши частного дома", "shows": 18 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "krovlya",
+      "stage": "solution",
+      "base_phrase": "перекрыть крышу",
+      "intent_mapping": ["remont", "tsena"],
+      "top": [
+        { "query": "перекрыть крышу", "shows": 147 },
+        { "query": "перекрою крышу дома", "shows": 65 },
+        { "query": "сколько перекрыть крышу", "shows": 50 },
+        { "query": "сколько стоит перекрыть крышу", "shows": 45 },
+        { "query": "перекрыть крышу в частном доме", "shows": 34 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "krovlya",
+      "stage": "materials",
+      "base_phrase": "металлочерепица цена",
+      "intent_mapping": ["materialy", "tsena"],
+      "top": [
+        { "query": "металлочерепица цена", "shows": 140 },
+        { "query": "цена металлочерепицы воронеж", "shows": 41 },
+        { "query": "металлочерепица цена за м2", "shows": 32 },
+        { "query": "металлочерепица для крыши цена", "shows": 33 },
+        { "query": "купить металлочерепицу цена", "shows": 23 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "krovlya",
+      "stage": "calculator",
+      "base_phrase": "калькулятор крыши",
+      "intent_mapping": ["kalkulyator"],
+      "top": [
+        { "query": "калькулятор крыши", "shows": 274 },
+        { "query": "калькулятор крыши онлайн", "shows": 123 },
+        { "query": "расчет крыши калькулятор", "shows": 93 },
+        { "query": "рассчитать крышу калькулятор", "shows": 71 },
+        { "query": "калькулятор профлиста на крышу", "shows": 31 }
+      ]
+    },
+
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "fasady",
+      "stage": "materials",
+      "base_phrase": "утепление фасада",
+      "intent_mapping": ["materialy", "montazh", "tsena"],
+      "top": [
+        { "query": "утепление фасада", "shows": 459 },
+        { "query": "утепление фасада дома", "shows": 139 },
+        { "query": "утепление фасада снаружи", "shows": 61 },
+        { "query": "утепление фасадов цена", "shows": 46 },
+        { "query": "вата для утепления фасада", "shows": 34 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "fasady",
+      "stage": "compare",
+      "base_phrase": "чем обшить фасад",
+      "intent_mapping": ["materialy"],
+      "top": [
+        { "query": "чем обшить фасад", "shows": 23 },
+        { "query": "чем обшить фасад дома", "shows": 20 },
+        { "query": "чем обшить фасад дома снаружи", "shows": 10 },
+        { "query": "чем лучше обшить фасад", "shows": 4 },
+        { "query": "чем обшить фасад дома материалы", "shows": 6 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "fasady",
+      "stage": "price",
+      "base_phrase": "сайдинг цена",
+      "intent_mapping": ["tsena", "materialy"],
+      "top": [
+        { "query": "сайдинг цена", "shows": 466 },
+        { "query": "сайдинг для дома цена", "shows": 208 },
+        { "query": "отделка сайдингом цена", "shows": 207 },
+        { "query": "сайдинг воронеж цены", "shows": 130 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "fasady",
+      "stage": "calculator",
+      "base_phrase": "калькулятор сайдинга",
+      "intent_mapping": ["kalkulyator"],
+      "top": [
+        { "query": "калькулятор сайдинга", "shows": 24 },
+        { "query": "калькулятор расчета сайдинга", "shows": 12 },
+        { "query": "калькулятор сайдинга для обшивки дома", "shows": 10 },
+        { "query": "сайдинг калькулятор онлайн", "shows": 10 }
+      ]
+    },
+
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "zabory",
+      "stage": "installation",
+      "base_phrase": "установка забора",
+      "intent_mapping": ["montazh", "pod-klyuch", "tsena"],
+      "top": [
+        { "query": "установка заборов", "shows": 241 },
+        { "query": "установка забора цена", "shows": 50 },
+        { "query": "установка забора воронеж", "shows": 38 },
+        { "query": "установка заборов под ключ", "shows": 21 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "zabory",
+      "stage": "price",
+      "base_phrase": "забор из профнастила цена",
+      "intent_mapping": ["tsena", "pod-klyuch"],
+      "top": [
+        { "query": "забор из профнастила цена", "shows": 19 },
+        { "query": "забор из профнастила цена под ключ", "shows": 10 },
+        { "query": "воронеж цена забора из профнастила", "shows": 12 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "zabory",
+      "stage": "materials",
+      "base_phrase": "евроштакетник цена",
+      "intent_mapping": ["materialy", "tsena"],
+      "top": [
+        { "query": "евроштакетник цена", "shows": 39 },
+        { "query": "евроштакетник воронеж цены", "shows": 17 },
+        { "query": "евроштакетник для забора воронеж цена", "shows": 14 },
+        { "query": "забор из евроштакетника цена", "shows": 4 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "zabory",
+      "stage": "compare",
+      "base_phrase": "какой забор лучше",
+      "intent_mapping": ["materialy"],
+      "top": [
+        { "query": "какой забор лучше", "shows": 63 },
+        { "query": "какой профлист лучше для забора", "shows": 10 },
+        { "query": "какие заборы лучше для частного", "shows": 4 }
+      ]
+    },
+    {
+      "geo": "voronezhskaya-oblast",
+      "service": "zabory",
+      "stage": "calculator",
+      "base_phrase": "калькулятор забора",
+      "intent_mapping": ["kalkulyator"],
+      "top": [
+        { "query": "калькулятор забора", "shows": 75 },
+        { "query": "калькулятор забора онлайн", "shows": 30 },
+        { "query": "калькулятор забора из профнастила", "shows": 13 },
+        { "query": "калькулятор штакетника для забора", "shows": 7 }
+      ]
+    },
+
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "krovlya",
+      "stage": "repair",
+      "base_phrase": "ремонт крыши",
+      "intent_mapping": ["remont", "tsena"],
+      "top": [
+        { "query": "ремонт крыши", "shows": 198 },
+        { "query": "ремонт крыши дома", "shows": 52 },
+        { "query": "капитальный ремонт крыши", "shows": 50 },
+        { "query": "ремонт крыши тамбов", "shows": 32 },
+        { "query": "ремонт крыши цена", "shows": 10 }
+      ]
+    },
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "krovlya",
+      "stage": "solution",
+      "base_phrase": "перекрыть крышу",
+      "intent_mapping": ["remont", "tsena"],
+      "top": [
+        { "query": "перекрыть крышу", "shows": 37 },
+        { "query": "сколько стоит перекрыть крышу", "shows": 10 },
+        { "query": "перекрыть крышу гаража", "shows": 8 }
+      ]
+    },
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "krovlya",
+      "stage": "materials",
+      "base_phrase": "металлочерепица цена",
+      "intent_mapping": ["materialy", "tsena"],
+      "top": [
+        { "query": "металлочерепица цена", "shows": 52 },
+        { "query": "металлочерепица тамбов цены", "shows": 27 },
+        { "query": "цена метра металлочерепицы", "shows": 21 }
+      ]
+    },
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "krovlya",
+      "stage": "calculator",
+      "base_phrase": "калькулятор крыши",
+      "intent_mapping": ["kalkulyator"],
+      "top": [
+        { "query": "калькулятор крыши", "shows": 110 },
+        { "query": "калькулятор крыши онлайн", "shows": 49 },
+        { "query": "расчет крыши калькулятор", "shows": 54 }
+      ]
+    },
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "fasady",
+      "stage": "materials",
+      "base_phrase": "утепление фасада",
+      "intent_mapping": ["materialy", "montazh", "tsena"],
+      "top": [
+        { "query": "утепление фасада", "shows": 104 },
+        { "query": "утепление фасада дома", "shows": 41 },
+        { "query": "утепление фасадов цена", "shows": 11 }
+      ]
+    },
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "fasady",
+      "stage": "price",
+      "base_phrase": "сайдинг цена",
+      "intent_mapping": ["tsena", "materialy"],
+      "top": [
+        { "query": "сайдинг цена", "shows": 178 },
+        { "query": "отделка сайдингом цена", "shows": 80 },
+        { "query": "сайдинг в тамбове цена", "shows": 35 }
+      ]
+    },
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "fasady",
+      "stage": "calculator",
+      "base_phrase": "калькулятор сайдинга",
+      "intent_mapping": ["kalkulyator"],
+      "top": [
+        { "query": "калькулятор сайдинга", "shows": 5 },
+        { "query": "сайдинг калькулятор онлайн", "shows": 5 },
+        { "query": "калькулятор сколько нужно сайдинга", "shows": 3 }
+      ]
+    },
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "zabory",
+      "stage": "installation",
+      "base_phrase": "установка забора",
+      "intent_mapping": ["montazh", "pod-klyuch", "tsena"],
+      "top": [
+        { "query": "установка заборов", "shows": 103 },
+        { "query": "установка забора цена", "shows": 12 },
+        { "query": "установка заборов тамбов", "shows": 12 }
+      ]
+    },
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "zabory",
+      "stage": "compare",
+      "base_phrase": "какой забор лучше",
+      "intent_mapping": ["materialy"],
+      "top": [
+        { "query": "какой забор лучше", "shows": 28 },
+        { "query": "какой профлист лучше для забора", "shows": 6 }
+      ]
+    },
+    {
+      "geo": "tambovskaya-oblast",
+      "service": "zabory",
+      "stage": "calculator",
+      "base_phrase": "калькулятор забора",
+      "intent_mapping": ["kalkulyator"],
+      "top": [
+        { "query": "калькулятор забора", "shows": 28 },
+        { "query": "калькулятор забора онлайн", "shows": 11 },
+        { "query": "калькулятор забора из профнастила", "shows": 7 }
+      ]
+    },
+
+    {
+      "geo": "saratovskaya-oblast",
+      "service": "krovlya",
+      "stage": "repair",
+      "base_phrase": "ремонт крыши",
+      "intent_mapping": ["remont"],
+      "top": [
+        { "query": "ремонт крыши", "shows": 531 },
+        { "query": "ремонт крыши дома", "shows": 145 },
+        { "query": "капитальный ремонт крыши", "shows": 94 },
+        { "query": "ремонт крыш саратов", "shows": 55 }
+      ]
+    },
+    {
+      "geo": "saratovskaya-oblast",
+      "service": "krovlya",
+      "stage": "solution",
+      "base_phrase": "перекрыть крышу",
+      "intent_mapping": ["remont", "tsena"],
+      "top": [
+        { "query": "перекрыть крышу", "shows": 102 },
+        { "query": "перекрою крышу дома", "shows": 42 },
+        { "query": "перекрыть крышу цена", "shows": 23 },
+        { "query": "сколько стоит перекрыть крышу", "shows": 16 }
+      ]
+    },
+    {
+      "geo": "saratovskaya-oblast",
+      "service": "krovlya",
+      "stage": "materials",
+      "base_phrase": "металлочерепица цена",
+      "intent_mapping": ["materialy", "tsena"],
+      "top": [
+        { "query": "металлочерепица цена", "shows": 65 },
+        { "query": "металлочерепица саратов цена", "shows": 21 },
+        { "query": "монтаж металлочерепицы цена", "shows": 9 }
+      ]
+    },
+    {
+      "geo": "saratovskaya-oblast",
+      "service": "fasady",
+      "stage": "materials",
+      "base_phrase": "утепление фасада",
+      "intent_mapping": ["materialy", "tsena", "montazh"],
+      "top": [
+        { "query": "утепление фасада", "shows": 802 },
+        { "query": "утепление фасада дома", "shows": 326 },
+        { "query": "утепление фасада снаружи", "shows": 180 },
+        { "query": "утепление фасадов цена", "shows": 168 }
+      ]
+    },
+    {
+      "geo": "saratovskaya-oblast",
+      "service": "zabory",
+      "stage": "installation",
+      "base_phrase": "установка забора",
+      "intent_mapping": ["montazh", "tsena", "pod-klyuch"],
+      "top": [
+        { "query": "установка заборов", "shows": 239 },
+        { "query": "установка забора саратов", "shows": 36 },
+        { "query": "установка забора цена", "shows": 42 }
+      ]
+    },
+    {
+      "geo": "saratovskaya-oblast",
+      "service": "zabory",
+      "stage": "price",
+      "base_phrase": "забор из профнастила цена",
+      "intent_mapping": ["tsena", "pod-klyuch"],
+      "top": [
+        { "query": "забор из профнастила цена", "shows": 25 },
+        { "query": "заборы из профнастила цена с установкой", "shows": 6 },
+        { "query": "установка забора из профнастила цена за метр", "shows": 6 }
+      ]
+    },
+
+    {
+      "geo": "volgogradskaya-oblast",
+      "service": "krovlya",
+      "stage": "repair",
+      "base_phrase": "ремонт крыши",
+      "intent_mapping": ["remont"],
+      "top": [
+        { "query": "ремонт крыши", "shows": 266 },
+        { "query": "ремонт крыши дома", "shows": 50 },
+        { "query": "волгоград ремонт крыш", "shows": 39 },
+        { "query": "капитальный ремонт крыши", "shows": 33 }
+      ]
+    },
+    {
+      "geo": "volgogradskaya-oblast",
+      "service": "krovlya",
+      "stage": "solution",
+      "base_phrase": "перекрыть крышу",
+      "intent_mapping": ["remont", "tsena"],
+      "top": [
+        { "query": "перекрыть крышу", "shows": 159 },
+        { "query": "перекрою крышу дома", "shows": 77 },
+        { "query": "сколько стоит перекрыть крышу", "shows": 33 },
+        { "query": "как перекрыть крышу дома", "shows": 27 }
+      ]
+    },
+    {
+      "geo": "volgogradskaya-oblast",
+      "service": "fasady",
+      "stage": "materials",
+      "base_phrase": "утепление фасада",
+      "intent_mapping": ["materialy", "montazh", "tsena"],
+      "top": [
+        { "query": "утепление фасада", "shows": 453 },
+        { "query": "утепление фасада дома", "shows": 182 },
+        { "query": "утепление фасада снаружи", "shows": 86 },
+        { "query": "утепление фасадов цена", "shows": 39 }
+      ]
+    },
+    {
+      "geo": "volgogradskaya-oblast",
+      "service": "zabory",
+      "stage": "installation",
+      "base_phrase": "установка забора",
+      "intent_mapping": ["montazh", "tsena", "pod-klyuch"],
+      "top": [
+        { "query": "установка заборов", "shows": 203 },
+        { "query": "установка забора цена", "shows": 21 },
+        { "query": "установка забора волгоград", "shows": 19 }
+      ]
+    }
+  ]
+}

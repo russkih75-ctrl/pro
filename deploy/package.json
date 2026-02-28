@@ -1,0 +1,15 @@
+{
+  "name": "kvadratyra-deploy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "node index.js",
+    "audit:server": "node audit/run-audit.mjs",
+    "audit:benchmark": "node audit/generate-benchmark.mjs",
+    "test": "node --test audit/*.test.mjs"
+  },
+  "dependencies": {
+    "basic-ftp": "^5.0.5",
+    "dotenv": "^16.4.5"
+  }
+}

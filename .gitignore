@@ -1,0 +1,33 @@
+# Node and frontend artifacts
+**/node_modules/
+**/dist/
+**/build/
+**/.vite/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.cursor/
+
+# Archives and generated bundles
+*.zip
+*.tar
+*.gz
+*.rar

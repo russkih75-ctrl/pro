@@ -1,0 +1,9 @@
+/**
+ * Vite CSS entry.
+ *
+ * Source of truth for styles is the theme `style.css` (WordPress-recognized).
+ * Vite bundles it into `assets/dist/style.css` for production.
+ */
+
+@import "../../style.css";
+

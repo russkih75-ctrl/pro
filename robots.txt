@@ -1,0 +1,54 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /*?s=
+Disallow: /*?p=
+Disallow: /search/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /*?utm_*
+Disallow: /*?yclid*
+Disallow: /*?gclid*
+
+# Yandex-specific
+User-agent: Yandex
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-includes/
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term /
+Clean-param: yclid /
+Clean-param: gclid /
+Clean-param: fbclid /
+
+# Sitemaps
+Sitemap: https://kvadratyra.ru/wp-sitemap.xml
+Sitemap: https://kvadratyra.ru/kv-geo-sitemap-cities.xml
+Sitemap: https://kvadratyra.ru/kv-geo-sitemap-services.xml
+Sitemap: https://kvadratyra.ru/feed/dzen/
+
+Host: kvadratyra.ru
+
+
+# AI Bots
+User-agent: GPTBot
+Allow: /
+Disallow: /wp-admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /wp-admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /wp-admin/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /wp-admin/
+
+# LLM content index
+# llms.txt: https://kvadratyra.ru/llms.txt
+# llms-full.txt: https://kvadratyra.ru/llms-full.txt

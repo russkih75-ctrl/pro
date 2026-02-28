@@ -1,0 +1,110 @@
+# Progress Log
+
+## 2026-02-19
+- Initialized missing `memory-bank` files required by `/build`.
+- Confirmed deploy currently uses a strict file whitelist and can miss critical SEO files.
+- Implemented automated audit scripts under `deploy/audit/`:
+  - `run-audit.mjs` (docroot detection + drift + HTTP checks)
+  - `generate-benchmark.mjs` (benchmark report scaffold from `mayai_audit.md`)
+  - libs: `docroot.mjs`, `drift.mjs`, `httpAudit.mjs`
+  - tests: `docroot.test.mjs`, `drift.test.mjs`, `httpAudit.test.mjs`
+- Updated `deploy/package.json` scripts and `deploy/env.example`.
+- Added `deploy/README.md` with usage.
+- Executed build verification commands in `deploy/`:
+  - `npm test` -> 8 passed, 0 failed.
+  - `npm run audit:benchmark` -> wrote `deploy/reports/benchmark-mayai-gap.md`.
+  - `npm run audit:server` -> completed; reports written to `deploy/reports/`.
+- Build status: implementation and verification complete for Level 2 scope.
+- Implemented Yandex 2026 pass (white + safe gray) updates:
+  - Theme SEO/indexing: fallback canonical tags, robots alignment updates.
+  - Trust/commercial: auto-seeding for `o-nas` and `vakansii` pages.
+  - Schema: added FAQPage on homepage + contactPoint in org graph.
+  - Rewrite resilience: versioned rewrite flush for theme and GEO sitemap rules.
+  - Audit tooling: expanded HTTP checks (indexability, canonical consistency, OG/Twitter), expanded URL matrix, added `AUDIT_SKIP_FTP` mode.
+- Verification after updates:
+  - `npm test` -> 8 passed, 0 failed.
+  - `AUDIT_SKIP_FTP=1 npm run audit:server` -> completed, reports refreshed.
+- Remaining production blockers (from HTTP report):
+  - 404 on `/kv-geo-sitemap.xml`, `/feed/dzen/`, `/o-nas/`, `/vakansii/` until deploy + rewrite refresh on server.
+- Started `/build` for GEO lead-first UX hardening (safe white/safe-gray):
+  - Updated GEO partner block wording and CTA in `kv-geo.php` to transparent "partner showroom" semantics.
+  - Removed public exact-address dependency in the partner flow before booking; now uses `area_hint`.
+  - Updated booking modal content/fields in `footer.php`:
+    - phone or messenger,
+    - consent checkbox,
+    - success state with route + messenger actions.
+  - Reworked `initPartnerPointsBooking()` in `assets/src/main.js`:
+    - enforced flow `open -> submit -> success -> route`,
+    - removed "open without booking",
+    - switched goals to `geo_*` naming with context params.
+  - Updated AJAX lead handler in `inc/calc-ajax.php` to accept contact via phone OR messenger.
+  - Extended partner data parser in `mu-plugins/kv-geo/lib/data.php` to support `route_url`/`area_hint`.
+  - Expanded `partner-points.json` city coverage and added `area_hint`/`route_url` fields.
+  - Added `inc/calc-ajax.php` to deploy whitelist in `deploy/index.js`.
+- Started large revision pass (Yandex 2026 + mayai-style reference):
+  - Baseline audit recorded in `deploy/reports/yandex-revision-baseline.md`.
+  - IA/UI/SEO updates applied:
+    - `front-page.php`: added intent navigation block and answer-first summary section.
+    - `single.php`: added GEO/commercial continuation CTA block.
+    - `schema-graph.php`: added `ItemList` navigation entity for key site intents.
+    - `schema-article.php`: enriched article schema with `wordCount`, `articleSection`, `keywords`.
+  - Content rewrite (premium/commercial relevance) published for posts:
+    - ID 4 (roofing),
+    - ID 5 (facade),
+    - ID 6 (fence).
+  - Premium visuals generated with face-preservation prompts and brand-on-clothing constraints:
+    - uploaded media IDs: 63, 64, 65.
+    - assigned as featured images to posts 4/5/6.
+  - Build and verification:
+    - Theme build: `npm run build` (success),
+    - Deploy tests: `npm test` (8/8),
+    - Production deploy to `/kvadratyra.ru-78/public_html` (success),
+    - `npm run audit:server` complete; key URLs remain 200 in `deploy/reports/http-audit.md`.
+- Premium UX + Calculator 2.0 implementation completed:
+  - `front-page.php`: fixed expert photo fallback and added animated trust stat counters.
+  - `template-parts/quiz-calculator.php`: added presets, progress points, package comparison cards, and consent field.
+  - `single.php`: embedded context-aware expanded calculator block under article content with service prefill.
+  - `assets/src/main.js`: implemented count-up animation, richer calculator funnel events, points logic, preset flow, and phone-or-messenger validation.
+  - `style.css`: added premium calculator UI styling for presets/meta/packages/consent and retained lightweight animation behavior.
+  - `deploy/index.js`: added `template-parts/quiz-calculator.php` to deploy whitelist.
+  - Premium expert visual generated from project references (media IDs 24/25/26 input), uploaded as media ID 66.
+- Final verification:
+  - Theme build: success (`vite build`),
+  - Deploy tests: success (8/8),
+  - Deploy to production: success,
+  - Server audit: success; reports refreshed in `deploy/reports/`.
+
+## 2026-02-20
+- Started `/build` for blueprint-driven publishing pipeline (post + guide).
+- Loaded build rules and memory-bank context (Level 2 execution path).
+- Implemented automation enhancements:
+  - `automation/wp_autopost/wp_client.py`:
+    - added `post_type` support (`post`/`guide`) for Gutenberg creation URL,
+    - kept status flow with final `publish` support via existing status field.
+  - `automation/wp_autopost/extract_blueprint_prompts.py`:
+    - parses blueprint JSON,
+    - extracts Wordstat/NanoBanana/WordPress blocks,
+    - outputs `out/blueprint-prompts.json` + `out/blueprint-runbook.md`,
+    - includes guide template with required MAX link.
+  - `automation/wp_autopost/README.md`:
+    - documented `post_type`,
+    - documented blueprint extraction command and outputs.
+  - Added `automation/wp_autopost/articles/guide-example.json` (publish-ready guide sample).
+- Validation:
+  - `python -m py_compile wp_client.py extract_blueprint_prompts.py` -> success.
+  - Ran extractor against blueprint `(13)` -> success, outputs created in `automation/wp_autopost/out/`.
+- Outcome:
+  - Build artifacts now provide step-by-step prompt flow from blueprint to WordPress publish and RSS (`/feed/dzen/`) verification.
+- Live MCP execution completed:
+  - Wordstat queries executed for keyword cluster:
+    - `где купить металлочерепицу`,
+    - `металлочерепица воронеж`,
+    - `металлочерепица воронежская область`.
+  - Nano Banana generated 2 images and links were uploaded to WordPress media:
+    - media ID 67 (article cover),
+    - media ID 68 (guide cover).
+  - Published via WordPress MCP:
+    - Post ID 69 (`posts`, publish),
+    - Guide ID 70 (`guide`, publish).
+  - RSS check:
+    - `/feed/dzen/` contains MAX support chat link from guide content (`max_link_in_rss=True`).
