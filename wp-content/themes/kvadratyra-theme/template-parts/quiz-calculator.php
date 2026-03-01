@@ -46,7 +46,7 @@ $is_article_context = $calc_context === 'article';
                 </div>
                 <div class="wizard__meta">
                     <div class="wizard__step-label" data-wizard-label>Шаг 1 из 4</div>
-                    <div class="wizard__points">Прогресс: <span data-wz-points>0</span> очков</div>
+                    <div class="wizard__points">Точность расчёта: <span data-wz-points>25</span>%</div>
                 </div>
 
                 <!-- Step 1: Service -->
@@ -83,16 +83,34 @@ $is_article_context = $calc_context === 'article';
 
                     <!-- Roof -->
                     <div class="wizard__fields" data-fields-for="roof" style="display:none">
-                        <div class="wizard__field">
+                        <div class="wizard__field" style="grid-column: 1 / -1;">
                             <label>Покрытие</label>
-                            <select data-wz="roof_material">
-                                <option value="metallocherepitsa">Металлочерепица (Grand Line, Металл Профиль)</option>
-                                <option value="profnastil">Профнастил (С-21, НС-35)</option>
-                                <option value="falts">Фальцевая кровля (Кликфальц)</option>
-                                <option value="soft">Гибкая черепица (Shinglas, Docke)</option>
-                                <option value="composite">Композитная черепица (Премиум)</option>
-                                <option value="ceramic">Керамическая / ЦПЧ (Премиум)</option>
-                            </select>
+                            <div class="wizard__card-group">
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="roof_material" name="roof_material" value="metallocherepitsa" checked hidden>
+                                    <span class="wizard__material-card-title">Металлочерепица</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="roof_material" name="roof_material" value="profnastil" hidden>
+                                    <span class="wizard__material-card-title">Профнастил</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="roof_material" name="roof_material" value="falts" hidden>
+                                    <span class="wizard__material-card-title">Фальцевая кровля</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="roof_material" name="roof_material" value="soft" hidden>
+                                    <span class="wizard__material-card-title">Гибкая черепица</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="roof_material" name="roof_material" value="composite" hidden>
+                                    <span class="wizard__material-card-title">Композитная</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="roof_material" name="roof_material" value="ceramic" hidden>
+                                    <span class="wizard__material-card-title">Керамическая</span>
+                                </label>
+                            </div>
                         </div>
                         <div class="wizard__field">
                             <label>Тип крыши</label>
@@ -130,16 +148,34 @@ $is_article_context = $calc_context === 'article';
 
                     <!-- Facade -->
                     <div class="wizard__fields" data-fields-for="facade" style="display:none">
-                        <div class="wizard__field">
+                        <div class="wizard__field" style="grid-column: 1 / -1;">
                             <label>Материал отделки</label>
-                            <select data-wz="facade_material">
-                                <option value="siding_gl">Виниловый сайдинг (Grand Line, Docke)</option>
-                                <option value="metal_siding_gl">Металлический сайдинг (Корабельная доска)</option>
-                                <option value="panels_gl">Фасадные панели (Я-Фасад, Docke-R)</option>
-                                <option value="hauberk_tn">Фасадная плитка (Hauberk)</option>
-                                <option value="fibro_cedral">Фиброцементный сайдинг (Cedral)</option>
-                                <option value="plaster">Штукатурный фасад (Короед)</option>
-                            </select>
+                            <div class="wizard__card-group">
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="facade_material" name="facade_material" value="siding_gl" checked hidden>
+                                    <span class="wizard__material-card-title">Виниловый сайдинг</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="facade_material" name="facade_material" value="metal_siding_gl" hidden>
+                                    <span class="wizard__material-card-title">Металлосайдинг</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="facade_material" name="facade_material" value="panels_gl" hidden>
+                                    <span class="wizard__material-card-title">Фасадные панели</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="facade_material" name="facade_material" value="hauberk_tn" hidden>
+                                    <span class="wizard__material-card-title">Фасадная плитка</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="facade_material" name="facade_material" value="fibro_cedral" hidden>
+                                    <span class="wizard__material-card-title">Фиброцемент</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="facade_material" name="facade_material" value="plaster" hidden>
+                                    <span class="wizard__material-card-title">Штукатурный</span>
+                                </label>
+                            </div>
                         </div>
                         <div class="wizard__field">
                             <label>Площадь стен, м²</label>
@@ -168,16 +204,34 @@ $is_article_context = $calc_context === 'article';
 
                     <!-- Fence -->
                     <div class="wizard__fields" data-fields-for="fence" style="display:none">
-                        <div class="wizard__field">
+                        <div class="wizard__field" style="grid-column: 1 / -1;">
                             <label>Тип забора</label>
-                            <select data-wz="fence_type">
-                                <option value="profnastil">Профнастил (С-8, МП-20)</option>
-                                <option value="shtaketnik">Евроштакетник</option>
-                                <option value="mesh_3d">3D-сетка Гиттер</option>
-                                <option value="jalousie">Забор-жалюзи</option>
-                                <option value="rancho">Забор Ранчо</option>
-                                <option value="rabitza">Сетка-рабица</option>
-                            </select>
+                            <div class="wizard__card-group">
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="fence_type" name="fence_type" value="profnastil" checked hidden>
+                                    <span class="wizard__material-card-title">Профнастил</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="fence_type" name="fence_type" value="shtaketnik" hidden>
+                                    <span class="wizard__material-card-title">Евроштакетник</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="fence_type" name="fence_type" value="mesh_3d" hidden>
+                                    <span class="wizard__material-card-title">3D-сетка</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="fence_type" name="fence_type" value="jalousie" hidden>
+                                    <span class="wizard__material-card-title">Жалюзи</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="fence_type" name="fence_type" value="rancho" hidden>
+                                    <span class="wizard__material-card-title">Ранчо</span>
+                                </label>
+                                <label class="wizard__material-card">
+                                    <input type="radio" data-wz="fence_type" name="fence_type" value="rabitza" hidden>
+                                    <span class="wizard__material-card-title">Рабица</span>
+                                </label>
+                            </div>
                         </div>
                         <div class="wizard__field">
                             <label>Длина забора, пог.м</label>
@@ -212,6 +266,10 @@ $is_article_context = $calc_context === 'article';
                             <span class="wizard__price" data-wz-price>—</span>
                             <span class="wizard__price-currency">₽</span>
                         </div>
+                        <div class="wizard__chart-wrap" style="display: flex; justify-content: center; margin: 24px 0;" data-wz-chart-container>
+                            <!-- SVG donut will be injected here -->
+                        </div>
+
                         <div class="wizard__includes">
                             <p style="color:var(--text-secondary);margin-bottom:8px;">Что включено:</p>
                             <div data-wz-includes></div>

@@ -338,6 +338,7 @@ function initWizard() {
     steps.forEach((s) => s.classList.toggle('is-active', parseInt(s.getAttribute('data-wizard-step')) === n));
     if (bar) bar.style.width = `${(n / total) * 100}%`;
     if (label) label.textContent = `Шаг ${n} из ${total}`;
+    if (pointsEl) pointsEl.textContent = String(Math.round((n / total) * 100));
 
     prevBtn.style.display = n > 1 ? '' : 'none';
     nextBtn.style.display = n < total ? '' : 'none';
@@ -361,8 +362,7 @@ function initWizard() {
   }
 
   function addPoints(amount) {
-    points = Math.max(0, points + amount);
-    if (pointsEl) pointsEl.textContent = String(points);
+    // Deprecated in new design
   }
 
   function setService(service) {
@@ -488,11 +488,22 @@ function initWizard() {
   const serviceLabels = { roof: 'Кровля', facade: 'Фасад', fence: 'Забор' };
 
   function getWzVal(name) {
+    const radio = wiz.querySelector(`input[type="radio"][data-wz="${name}"]:checked`);
+    if (radio) return radio.value;
     const el = wiz.querySelector(`[data-wz="${name}"]`);
     return el ? el.value : '';
   }
 
   function getWzOptText(name) {
+    const radio = wiz.querySelector(`input[type="radio"][data-wz="${name}"]:checked`);
+    if (radio) {
+      const label = radio.closest('label');
+      if (label) {
+        const titleEl = label.querySelector('.wizard__material-card-title');
+        return titleEl ? titleEl.textContent.trim() : radio.value;
+      }
+      return radio.value;
+    }
     const el = wiz.querySelector(`[data-wz="${name}"]`);
     if (!el) return '';
     if (el.tagName === 'SELECT' && el.selectedOptions && el.selectedOptions[0]) {
@@ -501,8 +512,68 @@ function initWizard() {
     return (el.value || '').trim();
   }
 
+  function renderDonutChart(container, mat, inst, del) {
+    if (!container) return;
+    const total = mat + inst + del;
+    if (total === 0) {
+      container.innerHTML = '';
+      return;
+    }
+    
+    const pMat = mat / total;
+    const pInst = inst / total;
+    const pDel = del / total;
+
+    const r = 80;
+    const circumference = 2 * Math.PI * r;
+    
+    const dashMat = pMat * circumference;
+    const offsetMat = 0;
+    
+    const dashInst = pInst * circumference;
+    const offsetInst = -(dashMat);
+    
+    const dashDel = pDel * circumference;
+    const offsetDel = -(dashMat + dashInst);
+
+    const html = `
+      <div class="donut-chart-wrap">
+        <div class="donut-chart">
+          <svg viewBox="0 0 180 180">
+            <circle cx="90" cy="90" r="80" stroke="rgba(255,255,255,0.05)" />
+            <circle cx="90" cy="90" r="80" stroke="#e8c547" stroke-dasharray="${dashMat} ${circumference}" stroke-dashoffset="${offsetMat}" />
+            <circle cx="90" cy="90" r="80" stroke="#4dabf7" stroke-dasharray="${dashInst} ${circumference}" stroke-dashoffset="${offsetInst}" />
+            <circle cx="90" cy="90" r="80" stroke="#ff6b6b" stroke-dasharray="${dashDel} ${circumference}" stroke-dashoffset="${offsetDel}" />
+          </svg>
+          <div class="donut-chart-text">
+            <div class="donut-chart-text-val">${total.toLocaleString('ru-RU')}</div>
+            <div class="donut-chart-text-lbl">Итого, ₽</div>
+          </div>
+        </div>
+        <div class="donut-legend">
+          <div class="donut-legend-item">
+            <div class="donut-legend-color" style="background: #e8c547;"></div>
+            <span>Материалы: <b>${mat.toLocaleString('ru-RU')} ₽</b> (${Math.round(pMat*100)}%)</span>
+          </div>
+          <div class="donut-legend-item">
+            <div class="donut-legend-color" style="background: #4dabf7;"></div>
+            <span>Работа: <b>${inst.toLocaleString('ru-RU')} ₽</b> (${Math.round(pInst*100)}%)</span>
+          </div>
+          <div class="donut-legend-item">
+            <div class="donut-legend-color" style="background: #ff6b6b;"></div>
+            <span>Доставка: <b>${del.toLocaleString('ru-RU')} ₽</b> (${Math.round(pDel*100)}%)</span>
+          </div>
+        </div>
+      </div>
+    `;
+    container.innerHTML = html;
+  }
+
   function calcEstimate() {
     let total = 0;
+    let matTotal = 0;
+    let instTotal = 0;
+    let delTotal = calcConfig.delivery.basePrice;
     let details = [];
 
     if (selectedService === 'roof') {
@@ -533,7 +604,9 @@ function initWizard() {
       const mPrice = matPrice * (1 + calcConfig.roof.dobornieRatio) + extrasPrice;
       const iPrice = installRate * typeCoef * floorsCoef;
       
-      total = Math.round((mPrice + iPrice) * area) + calcConfig.delivery.basePrice;
+      matTotal = Math.round(mPrice * area);
+      instTotal = Math.round(iPrice * area);
+      total = matTotal + instTotal + delTotal;
 
       details = [
         `Покрытие: ${getWzOptText('roof_material') || '—'}`,
@@ -569,7 +642,9 @@ function initWizard() {
       const mPrice = matPrice * (1 + calcConfig.facade.dobornieRatio) + insPrice + subPrice + calcConfig.facade.extras.membrane.price;
       const iPrice = baseRate;
 
-      total = Math.round((mPrice + iPrice) * netArea) + calcConfig.delivery.basePrice;
+      matTotal = Math.round(mPrice * netArea);
+      instTotal = Math.round(iPrice * netArea);
+      total = matTotal + instTotal + delTotal;
       
       details = [
         `Материал: ${getWzOptText('facade_material') || '—'}`,
@@ -598,12 +673,14 @@ function initWizard() {
       const mPricePm = (matPrice * height) + calcConfig.fence.extras.lags.price * 2 + calcConfig.fence.extras.screws.price;
       const iPricePm = baseRate * heightCoef;
 
-      total = Math.round((mPricePm + iPricePm) * length);
+      matTotal = Math.round(mPricePm * length);
+      instTotal = Math.round(iPricePm * length);
       
-      if (gates === 'swing') total += calcConfig.fence.extras.gate_swing.price;
-      if (gates === 'sliding') total += calcConfig.fence.extras.gate_sliding.price;
+      if (gates === 'swing') matTotal += calcConfig.fence.extras.gate_swing.price;
+      if (gates === 'sliding') matTotal += calcConfig.fence.extras.gate_sliding.price;
 
-      if (length > 0) total += calcConfig.delivery.basePrice;
+      if (length <= 0) delTotal = 0;
+      total = matTotal + instTotal + delTotal;
 
       details = [
         `Материал: ${getWzOptText('fence_type') || '—'}`,
@@ -618,6 +695,12 @@ function initWizard() {
 
     // CountUp animation
     animateNumber(priceEl, total);
+    
+    // Draw Donut Chart
+    const chartContainer = wiz.querySelector('[data-wz-chart-container]');
+    if (chartContainer) {
+      renderDonutChart(chartContainer, matTotal, instTotal, delTotal);
+    }
 
     if (includesEl) {
       includesEl.innerHTML = details.map((d) => `<span style="display:block;padding:2px 0;">✓ ${d}</span>`).join('');

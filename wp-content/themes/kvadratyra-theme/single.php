@@ -48,12 +48,14 @@ if ($cats_for_calc) {
         <!-- TOC Sidebar -->
         <div class="article-layout__sidebar">
             <?php if (!empty($toc_items)) : ?>
-                <?php echo kv_render_toc($toc_items); ?>
+                <div class="bento-card" style="position: sticky; top: 100px; padding: 24px; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                    <?php echo kv_render_toc($toc_items); ?>
+                </div>
             <?php endif; ?>
         </div>
 
         <!-- Article Content -->
-        <article class="article-layout__main" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <article class="article-layout__main bento-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="padding: clamp(24px, 5vw, 48px); border: none; box-shadow: 0 4px 24px rgba(0,0,0,0.04);">
             <?php while (have_posts()) : the_post(); ?>
 
                 <!-- Article Header -->
@@ -99,7 +101,7 @@ if ($cats_for_calc) {
                 </div>
 
                 <!-- Intent continuation -->
-                <section class="card intent-continuation">
+                <section class="bento-card intent-continuation" style="background: var(--bg-alt); margin-top: 40px;">
                     <h2>Нужен расчёт под ваш город?</h2>
                     <p>Откройте GEO-страницу: покажем сроки доставки, ориентиры по цене, гарантии и удобный сценарий записи на просмотр образцов.</p>
                     <div class="btn-group">
@@ -112,7 +114,7 @@ if ($cats_for_calc) {
                     </div>
                 </section>
 
-                <section class="calc-context card calc-context-block">
+                <section class="calc-context bento-card calc-context-block" style="margin-top: 24px; padding: 32px;">
                     <h2>Рассчитайте именно ваш объект</h2>
                     <p>Подготовили расширенный калькулятор по теме этой статьи: ориентир по бюджету, срокам и 3 сценария реализации.</p>
                     <?php
@@ -121,16 +123,16 @@ if ($cats_for_calc) {
                         'default_service' => $default_calc_service,
                     ]);
                     ?>
-                    <div class="grid grid--3 calc-retention mt-3">
-                        <div class="card">
+                    <div class="bento-grid mt-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                        <div class="bento-card" style="padding: 24px; background: var(--bg-alt);">
                             <h3 class="card__title">Эконом</h3>
                             <div class="card__text">Минимальный вход по бюджету, базовые материалы, контрольные точки по качеству.</div>
                         </div>
-                        <div class="card">
-                            <h3 class="card__title">Оптимум</h3>
+                        <div class="bento-card" style="padding: 24px; background: var(--bg-alt); border-color: var(--accent);">
+                            <h3 class="card__title" style="color: var(--accent);">Оптимум</h3>
                             <div class="card__text">Лучший баланс цена/ресурс/срок. Самый частый выбор для частных домов.</div>
                         </div>
-                        <div class="card">
+                        <div class="bento-card" style="padding: 24px; background: var(--bg-alt);">
                             <h3 class="card__title">Премиум</h3>
                             <div class="card__text">Максимальный ресурс, расширенная гарантия и приоритетная логистика.</div>
                         </div>
@@ -152,7 +154,7 @@ if ($cats_for_calc) {
                 <?php endif; ?>
 
                 <!-- Author Box -->
-                <div class="author-box card">
+                <div class="author-box bento-card" style="background: var(--bg-alt); margin-top: 40px; padding: 24px;">
                     <div class="author-box__avatar">
                         <?php echo mb_substr(get_the_author(), 0, 1); ?>
                     </div>
@@ -195,13 +197,13 @@ if ($cats_for_calc) {
                 ?>
                 <div class="mt-4">
                     <h2 class="section__title" style="font-size:24px;">Читайте также</h2>
-                    <div class="grid grid--3">
+                    <div class="bento-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
                         <?php while ($related->have_posts()) : $related->the_post(); ?>
-                            <a href="<?php the_permalink(); ?>" class="card card--link blog-card">
+                            <a href="<?php the_permalink(); ?>" class="bento-card card--link blog-card" style="padding: 0;">
                                 <?php if (has_post_thumbnail()) : ?>
                                     <img class="blog-card__img lazyload" data-src="<?php echo esc_url(get_the_post_thumbnail_url(null, 'kv-thumb')); ?>" alt="<?php the_title_attribute(); ?>" width="300" height="200">
                                 <?php endif; ?>
-                                <div class="blog-card__body">
+                                <div class="blog-card__body" style="padding: 20px;">
                                     <div class="blog-card__meta">
                                         <span><?php echo get_the_date('d.m.Y'); ?></span>
                                     </div>
@@ -216,7 +218,7 @@ if ($cats_for_calc) {
         </article>
 
         <!-- Next Action Block -->
-        <section class="next-action animate-in">
+        <section class="next-action bento-card animate-in" style="grid-column: 1 / -1; margin-top: 40px; background: var(--bg-alt);">
             <h2>Готовы приступить к работе?</h2>
             <p>
                 Оставьте заявку на бесплатный замер или задайте вопрос нашему инженеру напрямую в мессенджере.
